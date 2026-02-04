@@ -1,0 +1,585 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hrms_dashboard
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-01 00:00+0000\n"
+"PO-Revision-Date: 2025-01-01 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Traditional Chinese (Taiwan)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: hrms_dashboard
+#: model:ir.model,name:hrms_dashboard.model_hr_employee
+msgid "Employee"
+msgstr "員工"
+
+#. module: hrms_dashboard
+#: model:ir.model,name:hrms_dashboard.model_hr_employee_broad_factor
+msgid "Employee Broadfactor"
+msgstr "員工廣度因子"
+
+#. module: hrms_dashboard
+#: model_terms:ir.ui.view,arch_db:hrms_dashboard.report_broadfactor
+msgid "Broad Factor Report"
+msgstr "廣度因子報表"
+
+#. module: hrms_dashboard
+#: model:ir.actions.report,name:hrms_dashboard.action_report_broad_factor
+msgid "Broad Factor"
+msgstr "廣度因子"
+
+#. module: hrms_dashboard
+#: model:ir.actions.client,name:hrms_dashboard.hr_action_dashboard
+#: model:ir.ui.menu,name:hrms_dashboard.hrms_dashboard_menu_root
+msgid "Dashboard"
+msgstr "儀表板"
+
+#. module: hrms_dashboard
+#: model:ir.model.fields,field_description:hrms_dashboard.field_hr_employee_broad_factor__name
+msgid "Name"
+msgstr "名稱"
+
+#. module: hrms_dashboard
+#: model:ir.model.fields,field_description:hrms_dashboard.field_hr_employee_broad_factor__no_of_occurrence
+msgid "No.of Occurrence"
+msgstr "發生次數"
+
+#. module: hrms_dashboard
+#: model:ir.model.fields,field_description:hrms_dashboard.field_hr_employee_broad_factor__no_of_days
+msgid "No.of Days"
+msgstr "天數"
+
+#. module: hrms_dashboard
+#: model:ir.model.fields,field_description:hrms_dashboard.field_hr_employee__birthday
+msgid "Date of Birth"
+msgstr "出生日期"
+
+#. module: hrms_dashboard
+#: model:ir.model.fields,help:hrms_dashboard.field_hr_employee__birthday
+msgid "Birthday of employee"
+msgstr "員工生日"
+
+#. module: hrms_dashboard
+#: model:ir.model.fields,field_description:hrms_dashboard.field_hr_employee_broad_factor__display_name
+msgid "Display Name"
+msgstr "顯示名稱"
+
+#. module: hrms_dashboard
+#: model:ir.model.fields,field_description:hrms_dashboard.field_hr_employee_broad_factor__id
+msgid "ID"
+msgstr "ID"
+
+#. module: hrms_dashboard
+#: model:ir.model.fields,field_description:hrms_dashboard.field_hr_employee_broad_factor__create_uid
+msgid "Created by"
+msgstr "建立者"
+
+#. module: hrms_dashboard
+#: model:ir.model.fields,field_description:hrms_dashboard.field_hr_employee_broad_factor__create_date
+msgid "Created on"
+msgstr "建立於"
+
+#. module: hrms_dashboard
+#: model:ir.model.fields,field_description:hrms_dashboard.field_hr_employee_broad_factor__write_uid
+msgid "Last Updated by"
+msgstr "最後更新者"
+
+#. module: hrms_dashboard
+#: model:ir.model.fields,field_description:hrms_dashboard.field_hr_employee_broad_factor__write_date
+msgid "Last Updated on"
+msgstr "最後更新於"
+
+#. module: hrms_dashboard
+#: code:addons/hrms_dashboard/models/hr_employee.py:0
+#, python-format
+msgid "Unknown"
+msgstr "未知"
+
+#. module: hrms_dashboard
+#: model:ir.model.fields,help:hrms_dashboard.field_hr_employee_broad_factor__name
+msgid "Name for the record"
+msgstr "紀錄名稱"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Add job title"
+msgstr "新增職稱"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Joined "
+msgstr "到職 "
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Ago"
+msgstr "前"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Joined"
+msgstr "到職"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Date"
+msgstr "日期"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Address"
+msgstr "地址"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Payslips"
+msgstr "薪資單"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Timesheets"
+msgstr "工時表"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Contracts"
+msgstr "合約"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Broad Factor"
+msgstr "廣度因子"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Check In"
+msgstr "簽到"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Check out"
+msgstr "簽退"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Leave Requests"
+msgstr "請假申請"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Today"
+msgstr "今天"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "This Month"
+msgstr "本月"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Leave Allocation Requests"
+msgstr "假期分配申請"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Job Applications"
+msgstr "工作申請"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Departments"
+msgstr "部門"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Monthly Leave Analysis"
+msgstr "每月請假分析"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Monthly Join/Resign Analysis"
+msgstr "每月入職/離職分析"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Attrition Rate"
+msgstr "流失率"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "ATTENDANCE"
+msgstr "出勤"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Sign In"
+msgstr "登入"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Sign Out"
+msgstr "登出"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Worked Hours"
+msgstr "工作時數"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "LEAVES"
+msgstr "請假"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "From Date"
+msgstr "開始日期"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "To Date"
+msgstr "結束日期"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Type"
+msgstr "類型"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Status"
+msgstr "狀態"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "EXPENSES"
+msgstr "費用"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Subject"
+msgstr "主題"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Amount"
+msgstr "金額"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "PROJECTS"
+msgstr "專案"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Project"
+msgstr "專案"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Task"
+msgstr "任務"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Due Date"
+msgstr "到期日"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Stage"
+msgstr "階段"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Upcoming Birthdays"
+msgstr "即將到來的生日"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Happy Birthday..!! 🎁"
+msgstr "生日快樂！！🎁"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Days Left"
+msgstr "天後"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "No Upcoming Birthdays"
+msgstr "沒有即將到來的生日"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "There are no birthdays in the coming days."
+msgstr "近日沒有員工生日。"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Upcoming Events"
+msgstr "即將到來的活動"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Date:"
+msgstr "日期："
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Venue:"
+msgstr "地點："
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "No Upcoming Events"
+msgstr "沒有即將到來的活動"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "No events scheduled for the coming days."
+msgstr "近日沒有安排活動。"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Announcements"
+msgstr "公告"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Date :"
+msgstr "日期："
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "No Announcements"
+msgstr "沒有公告"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "No announcements available at this time."
+msgstr "目前沒有可用的公告。"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "My Leave Analysis"
+msgstr "我的請假分析"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "My Skill Analysis"
+msgstr "我的技能分析"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Error : Could not find employee linked to user"
+msgstr "錯誤：找不到與使用者關聯的員工"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Please contact system admin for the setup"
+msgstr "請聯繫系統管理員進行設定"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/js/dashboard.js:0
+#, python-format
+msgid "Project Task"
+msgstr "專案任務"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/js/dashboard.js:0
+#, python-format
+msgid "My Tasks"
+msgstr "我的任務"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/js/dashboard.js:0
+#, python-format
+msgid "Attendances"
+msgstr "出勤"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/js/dashboard.js:0
+#, python-format
+msgid "Leave Request"
+msgstr "請假申請"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/js/dashboard.js:0
+#, python-format
+msgid "Expense"
+msgstr "費用"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/js/dashboard.js:0
+#, python-format
+msgid "Leave Allocation Request"
+msgstr "假期分配申請"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/js/dashboard.js:0
+#, python-format
+msgid "Applications"
+msgstr "應徵"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/js/dashboard.js:0
+#, python-format
+msgid "Leaves Today"
+msgstr "今日請假"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/js/dashboard.js:0
+#, python-format
+msgid "This Month Leaves"
+msgstr "本月請假"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/js/dashboard.js:0
+#, python-format
+msgid "Employee Payslips"
+msgstr "員工薪資單"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/js/dashboard.js:0
+#, python-format
+msgid "Contracts"
+msgstr "合約"
+
+#. module: hrms_dashboard
+#. odoo-javascript
+#: code:addons/hrms_dashboard/static/src/js/dashboard.js:0
+#, python-format
+msgid "Timesheets"
+msgstr "工時表"

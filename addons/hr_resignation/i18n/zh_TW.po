@@ -1,0 +1,452 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hr_resignation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-13 05:32+0000\n"
+"PO-Revision-Date: 2025-09-13 05:32+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_needaction
+msgid "Action Needed"
+msgstr "需要處理"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.hr_resignation_view_form
+msgid "Approve"
+msgstr "核准"
+
+#. module: hr_resignation
+#: model:ir.model.fields.selection,name:hr_resignation.selection__hr_resignation__state__approved
+msgid "Approved"
+msgstr "已核准"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__approved_revealing_date
+msgid "Approved Last Day Of Employee"
+msgstr "核准的員工最後工作日"
+
+#. module: hr_resignation
+#: model:ir.actions.act_window,name:hr_resignation.hr_resignation_approved_action
+#: model:ir.ui.menu,name:hr_resignation.hr_resignation_menu_approved_request
+#: model_terms:ir.actions.act_window,help:hr_resignation.hr_resignation_approved_action
+msgid "Approved Resignation"
+msgstr "已核准的離職"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_attachment_count
+msgid "Attachment Count"
+msgstr "附件數量"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.hr_resignation_view_form
+msgid "Cancel"
+msgstr "取消"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__change_employee
+msgid "Change Employee"
+msgstr "變更員工"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__change_employee
+msgid "Checks , if the user has permission to change the employee"
+msgstr "檢查使用者是否有權限變更員工"
+
+#. module: hr_resignation
+#: model:ir.model.fields.selection,name:hr_resignation.selection__hr_resignation__state__confirm
+#: model_terms:ir.ui.view,arch_db:hr_resignation.hr_resignation_view_form
+msgid "Confirm"
+msgstr "確認"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__resign_confirm_date
+msgid "Confirmed Date"
+msgstr "確認日期"
+
+#. module: hr_resignation
+#: model_terms:ir.actions.act_window,help:hr_resignation.hr_resignation_action
+msgid "Create the First Resignation"
+msgstr "建立第一筆離職記錄"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__create_uid
+msgid "Created by"
+msgstr "建立者"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__create_date
+msgid "Created on"
+msgstr "建立於"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_employee__resign_date
+msgid "Date of the resignation"
+msgstr "離職日期"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__resign_confirm_date
+msgid "Date on which the request is confirmed by the employee."
+msgstr "員工確認申請的日期。"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__approved_revealing_date
+msgid "Date on which the request is confirmed by the manager."
+msgstr "主管確認申請的日期。"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.hr_resignation_view_form
+msgid "Dates"
+msgstr "日期"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__department_id
+msgid "Department"
+msgstr "部門"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__department_id
+msgid "Department of the employee"
+msgstr "員工所屬部門"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__display_name
+msgid "Display Name"
+msgstr "顯示名稱"
+
+#. module: hr_resignation
+#: model:ir.model.fields.selection,name:hr_resignation.selection__hr_resignation__state__draft
+msgid "Draft"
+msgstr "草稿"
+
+#. module: hr_resignation
+#: model:ir.model,name:hr_resignation.model_hr_employee
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__employee_id
+msgid "Employee"
+msgstr "員工"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__employee_contract
+msgid "Employee Contract"
+msgstr "員工合約"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.hr_resignation_view_form
+msgid "Employee Details"
+msgstr "員工詳細資料"
+
+#. module: hr_resignation
+#: model:ir.actions.act_window,name:hr_resignation.hr_resignation_action
+#: model_terms:ir.ui.view,arch_db:hr_resignation.hr_resignation_view_form
+#: model_terms:ir.ui.view,arch_db:hr_resignation.hr_resignation_view_tree
+msgid "Employee Resignation"
+msgstr "員工離職"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__expected_revealing_date
+msgid ""
+"Employee requested date on which employee is revealing from the company."
+msgstr "員工申請離開公司的日期。"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_employee__fired
+msgid "Fired"
+msgstr "解僱"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.view_employee_filter
+msgid "Fired Employees"
+msgstr "被解僱的員工"
+
+#. module: hr_resignation
+#: model:ir.model.fields.selection,name:hr_resignation.selection__hr_resignation__resignation_type__fired
+msgid "Fired by the company"
+msgstr "被公司解僱"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_follower_ids
+msgid "Followers"
+msgstr "關注者"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "關注者（合作夥伴）"
+
+#. module: hr_resignation
+#: model:ir.model,name:hr_resignation.model_hr_resignation
+msgid "HR Resignation"
+msgstr "人力資源離職"
+
+#. module: hr_resignation
+#: model:ir.actions.server,name:hr_resignation.ir_cron_employee_resignation_ir_actions_server
+msgid "HR Resignation: Update Employee Status"
+msgstr "人力資源離職：更新員工狀態"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__has_message
+msgid "Has Message"
+msgstr "有訊息"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_employee__id
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__id
+msgid "ID"
+msgstr "ID"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_employee__fired
+msgid "If checked then employee has fired"
+msgstr "若勾選，表示員工已被解僱"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_employee__resigned
+msgid "If checked then employee has resigned"
+msgstr "若勾選，表示員工已離職"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "若勾選，表示有新訊息需要您注意。"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__message_has_error
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "若勾選，表示部分訊息有傳遞錯誤。"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_is_follower
+msgid "Is Follower"
+msgstr "是關注者"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__joined_date
+msgid "Join Date"
+msgstr "入職日期"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__joined_date
+msgid "Joining date of the employee.i.e Start date of the first contract"
+msgstr "員工的入職日期，即第一份合約的開始日期"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__expected_revealing_date
+msgid "Last Day of Employee"
+msgstr "員工最後工作日"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__write_uid
+msgid "Last Updated by"
+msgstr "最後更新者"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__write_date
+msgid "Last Updated on"
+msgstr "最後更新於"
+
+#. module: hr_resignation
+#. odoo-python
+#: code:addons/hr_resignation/models/hr_resignation.py:0
+msgid "Last date of the Employee must be anterior to Joining date"
+msgstr "員工最後工作日必須在入職日期之後"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_has_error
+msgid "Message Delivery error"
+msgstr "訊息傳遞錯誤"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_ids
+msgid "Messages"
+msgstr "訊息"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__employee_id
+msgid "Name of the employee for whom the request is creating"
+msgstr "建立此申請的員工姓名"
+
+#. module: hr_resignation
+#. odoo-python
+#: code:addons/hr_resignation/models/hr_resignation.py:0
+msgid "New"
+msgstr "新建"
+
+#. module: hr_resignation
+#: model:ir.model.fields.selection,name:hr_resignation.selection__hr_resignation__resignation_type__resigned
+msgid "Normal Resignation"
+msgstr "一般離職"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__notice_period
+msgid "Notice Period"
+msgstr "通知期"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__notice_period
+msgid "Notice Period of the employee."
+msgstr "員工的通知期。"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_needaction_counter
+msgid "Number of Actions"
+msgstr "操作數量"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_has_error_counter
+msgid "Number of errors"
+msgstr "錯誤數量"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "需要處理的訊息數量"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "傳遞錯誤的訊息數量"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__name
+msgid "Order Reference"
+msgstr "單號"
+
+#. module: hr_resignation
+#. odoo-python
+#: code:addons/hr_resignation/models/hr_resignation.py:0
+msgid "Please Enter Valid Dates."
+msgstr "請輸入有效日期。"
+
+#. module: hr_resignation
+#. odoo-python
+#: code:addons/hr_resignation/models/hr_resignation.py:0
+msgid "Please set a Joining Date for employee"
+msgstr "請設定員工的入職日期"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__rating_ids
+msgid "Ratings"
+msgstr "評分"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__reason
+msgid "Reason"
+msgstr "原因"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.hr_resignation_view_form
+msgid "Reject"
+msgstr "駁回"
+
+#. module: hr_resignation
+#: model:ir.model.fields.selection,name:hr_resignation.selection__hr_resignation__state__cancel
+msgid "Rejected"
+msgstr "已駁回"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_employee__resign_date
+msgid "Resign Date"
+msgstr "離職日期"
+
+#. module: hr_resignation
+#: model:ir.ui.menu,name:hr_resignation.hr_resignation_menu_root
+msgid "Resignation"
+msgstr "離職"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.hr_resignation_view_form
+msgid "Resignation Details"
+msgstr "離職詳細資料"
+
+#. module: hr_resignation
+#: model:ir.ui.menu,name:hr_resignation.hr_resignation_menu_request
+msgid "Resignation Request"
+msgstr "離職申請"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__resignation_type
+msgid "Resignation Type"
+msgstr "離職類型"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_employee__resigned
+msgid "Resigned"
+msgstr "已離職"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.view_employee_filter
+msgid "Resigned Employees"
+msgstr "已離職員工"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "簡訊傳遞錯誤"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__resignation_type
+msgid ""
+"Select the type of resignation: normal resignation or fired by the company"
+msgstr "選擇離職類型：一般離職或被公司解僱"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.hr_resignation_view_form
+msgid "Set to Draft"
+msgstr "設為草稿"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__reason
+msgid "Specify reason for leaving the company"
+msgstr "說明離開公司的原因"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__state
+msgid "Status"
+msgstr "狀態"
+
+#. module: hr_resignation
+#. odoo-python
+#: code:addons/hr_resignation/models/hr_resignation.py:0
+msgid "There are no Contracts found for this employee"
+msgstr "找不到此員工的合約"
+
+#. module: hr_resignation
+#. odoo-python
+#: code:addons/hr_resignation/models/hr_resignation.py:0
+msgid ""
+"There is a resignation request in confirmed or approved state for this "
+"employee"
+msgstr "此員工已有確認或核准狀態的離職申請"
+
+#. module: hr_resignation
+#: model_terms:ir.ui.view,arch_db:hr_resignation.hr_resignation_view_form
+msgid "Type"
+msgstr "類型"
+
+#. module: hr_resignation
+#: model:ir.model.fields,field_description:hr_resignation.field_hr_resignation__website_message_ids
+msgid "Website Messages"
+msgstr "網站訊息"
+
+#. module: hr_resignation
+#: model:ir.model.fields,help:hr_resignation.field_hr_resignation__website_message_ids
+msgid "Website communication history"
+msgstr "網站通訊記錄"
+
+#. module: hr_resignation
+#. odoo-python
+#: code:addons/hr_resignation/models/hr_resignation.py:0
+msgid "You cannot create a request for other employees"
+msgstr "您不能為其他員工建立申請"

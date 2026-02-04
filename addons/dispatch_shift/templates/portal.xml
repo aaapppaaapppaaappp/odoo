@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Invalid Token Page -->
+    <template id="portal_invalid_token" name="Dispatch: Invalid Token">
+        <t t-call="portal.frontend_layout">
+            <div id="wrap" class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <h2>Invalid or Expired Link</h2>
+                        <p class="text-muted">
+                            The link you used is no longer valid.
+                            Please contact your dispatch coordinator for a new link.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <!-- Employee Home Page -->
+    <template id="portal_home" name="Dispatch: Employee Home">
+        <t t-call="portal.frontend_layout">
+            <div id="wrap" class="container py-4">
+                <div class="row mb-4">
+                    <div class="col">
+                        <h2><t t-out="labels['welcome']"/> <t t-out="employee.name"/>!</h2>
+                    </div>
+                </div>
+
+                <!-- Success Messages -->
+                <t t-if="message">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <t t-out="message"/>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"/>
+                    </div>
+                </t>
+
+                <!-- Open Campaigns -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5 class="mb-0"><t t-out="labels['available_campaigns']"/></h5>
+                    </div>
+                    <div class="card-body">
+                        <t t-if="campaigns">
+                            <div class="list-group">
+                                <t t-foreach="campaigns" t-as="campaign">
+                                    <a t-attf-href="/dispatch/campaign/#{campaign.id}/browse?access_token=#{access_token}"
+                                       class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <strong><t t-out="campaign.name"/></strong>
+                                            <br/>
+                                            <small class="text-muted">
+                                                <t t-out="campaign.date_start"/> - <t t-out="campaign.date_end"/>
+                                                <t t-if="campaign.client_id">
+                                                    | <t t-out="campaign.client_id.name"/>
+                                                </t>
+                                            </small>
+                                        </div>
+                                        <t t-if="employee.id in campaign.frozen_employee_ids.ids">
+                            <span class="badge text-bg-danger rounded-pill">
+                                <i class="fa fa-ban"/> <t t-out="labels['blocked']"/>
+                            </span>
+                        </t>
+                        <t t-else="">
+                            <span class="badge text-bg-primary rounded-pill"><t t-out="labels['browse_shifts']"/></span>
+                        </t>
+                                    </a>
+                                </t>
+                            </div>
+                        </t>
+                        <t t-else="">
+                            <p class="text-muted mb-0"><t t-out="labels['no_campaigns']"/></p>
+                        </t>
+                    </div>
+                </div>
+
+                <!-- My Shifts -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0"><t t-out="labels['my_shifts']"/></h5>
+                    </div>
+                    <div class="card-body">
+                        <t t-if="applications">
+                            <div class="table-responsive">
+                                <table class="table table-sm table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th><t t-out="labels['date']"/></th>
+                                            <th><t t-out="labels['store']"/></th>
+                                            <th><t t-out="labels['shift']"/></th>
+                                            <th><t t-out="labels['time']"/></th>
+                                            <th><t t-out="labels['status']"/></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <t t-foreach="applications" t-as="app">
+                                            <tr>
+                                                <td>
+                                                    <a t-attf-href="/dispatch/application/#{app.id}?access_token=#{access_token}">
+                                                        <t t-out="app.slot_id.date"/>
+                                                    </a>
+                                                </td>
+                                                <td><t t-out="app.slot_id.store_id.name"/></td>
+                                                <td><t t-out="shift_labels.get(app.slot_id.shift_label, '')"/></td>
+                                                <td>
+                                                    <t t-out="format_hour(app.slot_id.start_hour)"/>
+                                                    -
+                                                    <t t-out="format_hour(app.slot_id.end_hour)"/>
+                                                </td>
+                                                <td>
+                                                    <span t-if="app.state == 'applied'"
+                                                          class="badge text-bg-info"><t t-out="labels['applied']"/></span>
+                                                    <span t-elif="app.state == 'confirmed'"
+                                                          class="badge text-bg-success"><t t-out="labels['confirmed']"/></span>
+                                                    <span t-elif="app.state == 'waitlisted'"
+                                                          class="badge text-bg-warning"><t t-out="labels['waitlisted']"/></span>
+                                                    <span t-elif="app.state == 'rejected'"
+                                                          class="badge text-bg-danger"><t t-out="labels['rejected']"/></span>
+                                                </td>
+                                                <td>
+                                                    <t t-if="app.state in ('applied', 'confirmed', 'waitlisted')">
+                                                        <form t-attf-action="/dispatch/application/#{app.id}/cancel"
+                                                              method="post" class="d-inline">
+                                                            <input type="hidden" name="csrf_token"
+                                                                   t-att-value="request.csrf_token()"/>
+                                                            <input type="hidden" name="access_token"
+                                                                   t-att-value="access_token"/>
+                                                            <button type="submit"
+                                                                    class="btn btn-sm btn-outline-danger"
+                                                                    t-attf-onclick="return confirm('#{labels['cancel_confirm']}')">
+                                                                <t t-out="labels['cancel']"/>
+                                                            </button>
+                                                        </form>
+                                                    </t>
+                                                </td>
+                                            </tr>
+                                        </t>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </t>
+                        <t t-else="">
+                            <p class="text-muted mb-0"><t t-out="labels['no_shifts']"/></p>
+                        </t>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <!-- Browse Campaign Shifts Grid -->
+    <template id="portal_browse" name="Dispatch: Browse Shifts">
+        <t t-call="portal.frontend_layout">
+            <div id="wrap" class="container py-4">
+                <div class="row mb-3 align-items-center">
+                    <div class="col">
+                        <h2><t t-out="campaign.name"/></h2>
+                        <p class="text-muted">
+                            <t t-out="campaign.date_start"/> – <t t-out="campaign.date_end"/>
+                            <t t-if="campaign.client_id">
+                                | <t t-out="labels['client']"/> <t t-out="campaign.client_id.name"/>
+                            </t>
+                            <br/>
+                            <t t-out="labels['max_consecutive_days']"/> <t t-out="campaign.max_consecutive_days"/>
+                        </p>
+                    </div>
+                    <div class="col-auto">
+                        <a t-attf-href="/dispatch/my?access_token=#{access_token}"
+                           class="btn btn-outline-secondary">
+                            <i class="fa fa-arrow-left"/> <t t-out="labels['back']"/>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Error Messages -->
+                <t t-if="error">
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <t t-out="error"/>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"/>
+                    </div>
+                </t>
+
+                <!-- Frozen Warning -->
+                <t t-if="is_frozen">
+                    <div class="alert alert-danger" role="alert">
+                        <i class="fa fa-ban"/>
+                        <strong><t t-out="labels['you_are_blocked']"/></strong>
+                        <t t-out="labels['blocked_message']"/>
+                    </div>
+                </t>
+
+                <form t-attf-action="/dispatch/campaign/#{campaign.id}/apply"
+                      method="post" id="dispatch_apply_form">
+                    <input type="hidden" name="csrf_token"
+                           t-att-value="request.csrf_token()"/>
+                    <input type="hidden" name="access_token"
+                           t-att-value="access_token"/>
+
+                    <div class="table-responsive dispatch-grid">
+                        <table class="table table-bordered table-sm text-center">
+                            <thead class="table-light">
+                                <tr>
+                                    <th class="text-start" style="min-width:100px;"><t t-out="labels['date']"/></th>
+                                    <t t-foreach="templates" t-as="tmpl">
+                                        <th style="min-width:120px;">
+                                            <div><t t-out="tmpl.store_id.name"/></div>
+                                            <small class="text-muted">
+                                                <t t-out="shift_labels.get(tmpl.shift_label, '')"/>
+                                                <br/>
+                                                <t t-out="format_hour(tmpl.start_hour)"/>-<t t-out="format_hour(tmpl.end_hour)"/>
+                                            </small>
+                                        </th>
+                                    </t>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="dates" t-as="date">
+                                    <tr>
+                                        <td class="text-start align-middle">
+                                            <strong><t t-out="date.strftime('%m/%d')"/></strong>
+                                            <br/>
+                                            <small class="text-muted"><t t-out="format_weekday(date)"/></small>
+                                        </td>
+                                        <t t-foreach="templates" t-as="tmpl">
+                                            <t t-set="slot" t-value="slot_map.get((tmpl.id, date))"/>
+                                            <td class="align-middle">
+                                                <t t-if="slot">
+                                                    <t t-if="slot.id in rejected_slot_ids">
+                                                        <span class="badge text-bg-danger"><t t-out="labels['rejected']"/></span>
+                                                    </t>
+                                                    <t t-elif="slot.id in applied_slot_ids">
+                                                        <span class="badge text-bg-info"><t t-out="labels['applied']"/></span>
+                                                    </t>
+                                                    <t t-elif="not slot.is_full">
+                                                        <div class="form-check d-flex justify-content-center">
+                                                            <input type="checkbox"
+                                                                   class="form-check-input dispatch-slot-cb"
+                                                                   t-attf-name="slot_#{slot.id}"
+                                                                   t-att-data-date="str(date)"
+                                                                   t-att-disabled="is_frozen or None"/>
+                                                        </div>
+                                                        <small class="text-muted">
+                                                            <t t-out="slot.seats_available"/>/<t t-out="slot.capacity"/>
+                                                        </small>
+                                                    </t>
+                                                    <t t-else="">
+                                                        <span class="badge text-bg-secondary"><t t-out="labels['full']"/></span>
+                                                        <br/>
+                                                        <div class="form-check d-flex justify-content-center mt-1">
+                                                            <input type="checkbox"
+                                                                   class="form-check-input dispatch-slot-cb"
+                                                                   t-attf-name="slot_#{slot.id}"
+                                                                   t-att-data-date="str(date)"
+                                                                   title="Join waitlist"
+                                                                   t-att-disabled="is_frozen or None"/>
+                                                        </div>
+                                                        <small class="text-muted"><t t-out="labels['waitlist']"/></small>
+                                                    </t>
+                                                </t>
+                                                <t t-else="">
+                                                    <span class="text-muted">-</span>
+                                                </t>
+                                            </td>
+                                        </t>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="d-flex justify-content-end mt-3">
+                        <t t-if="not is_frozen">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa fa-check"/> <t t-out="labels['apply_for_selected']"/>
+                            </button>
+                        </t>
+                        <t t-else="">
+                            <button type="button" class="btn btn-primary" disabled="disabled">
+                                <i class="fa fa-ban"/> <t t-out="labels['applications_blocked']"/>
+                            </button>
+                        </t>
+                    </div>
+                </form>
+            </div>
+        </t>
+    </template>
+
+    <!-- Application Detail Page -->
+    <template id="portal_application_detail" name="Dispatch: Application Detail">
+        <t t-call="portal.frontend_layout">
+            <div id="wrap" class="container py-4">
+                <div class="row mb-3 align-items-center">
+                    <div class="col">
+                        <h2><t t-out="labels['shift_application']"/></h2>
+                    </div>
+                    <div class="col-auto">
+                        <a t-attf-href="/dispatch/my?access_token=#{access_token}"
+                           class="btn btn-outline-secondary">
+                            <i class="fa fa-arrow-left"/> <t t-out="labels['back']"/>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <dl class="row mb-0">
+                                    <dt class="col-sm-4"><t t-out="labels['date']"/></dt>
+                                    <dd class="col-sm-8"><t t-out="application.slot_id.date"/></dd>
+                                    <dt class="col-sm-4"><t t-out="labels['store']"/></dt>
+                                    <dd class="col-sm-8"><t t-out="application.slot_id.store_id.name"/></dd>
+                                    <dt class="col-sm-4"><t t-out="labels['shift']"/></dt>
+                                    <dd class="col-sm-8"><t t-out="shift_labels.get(application.slot_id.shift_label, '')"/></dd>
+                                    <dt class="col-sm-4"><t t-out="labels['time']"/></dt>
+                                    <dd class="col-sm-8">
+                                        <t t-out="format_hour(application.slot_id.start_hour)"/>
+                                        - <t t-out="format_hour(application.slot_id.end_hour)"/>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="col-md-6">
+                                <dl class="row mb-0">
+                                    <dt class="col-sm-4"><t t-out="labels['campaign']"/></dt>
+                                    <dd class="col-sm-8"><t t-out="application.campaign_id.name"/></dd>
+                                    <dt class="col-sm-4"><t t-out="labels['applied_at']"/></dt>
+                                    <dd class="col-sm-8"><t t-out="application.applied_at"/></dd>
+                                    <dt class="col-sm-4"><t t-out="labels['status']"/></dt>
+                                    <dd class="col-sm-8">
+                                        <span t-if="application.state == 'applied'"
+                                              class="badge text-bg-info"><t t-out="labels['applied']"/></span>
+                                        <span t-elif="application.state == 'confirmed'"
+                                              class="badge text-bg-success"><t t-out="labels['confirmed']"/></span>
+                                        <span t-elif="application.state == 'waitlisted'"
+                                              class="badge text-bg-warning"><t t-out="labels['waitlisted']"/></span>
+                                        <span t-elif="application.state == 'rejected'"
+                                              class="badge text-bg-danger"><t t-out="labels['rejected']"/></span>
+                                        <span t-elif="application.state == 'cancelled'"
+                                              class="badge text-bg-secondary"><t t-out="labels['cancelled']"/></span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <t t-if="application.state in ('applied', 'confirmed', 'waitlisted')">
+                            <hr/>
+                            <form t-attf-action="/dispatch/application/#{application.id}/cancel"
+                                  method="post" class="d-inline">
+                                <input type="hidden" name="csrf_token"
+                                       t-att-value="request.csrf_token()"/>
+                                <input type="hidden" name="access_token"
+                                       t-att-value="access_token"/>
+                                <button type="submit"
+                                        class="btn btn-sm btn-outline-danger"
+                                        t-attf-onclick="return confirm('#{labels['cancel_confirm']}')">
+                                    <t t-out="labels['cancel_application']"/>
+                                </button>
+                            </form>
+                        </t>
+                    </div>
+                </div>
+
+                <!-- Message Thread -->
+                <div id="application_communication" class="mt-4">
+                    <h4><t t-out="labels['communication_history']"/></h4>
+                    <t t-call="portal.message_thread">
+                        <t t-set="object" t-value="application"/>
+                        <t t-set="token" t-value="application.access_token"/>
+                        <t t-set="disable_composer" t-value="True"/>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </template>
+
+</odoo>

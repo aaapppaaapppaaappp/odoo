@@ -1,0 +1,953 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* dispatch_shift
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: Chinese (Traditional Han script)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/wizard/dispatch_campaign_invite.py:0
+#, python-format
+msgid "%d employee(s) invited to %s."
+msgstr "已邀請 %d 位員工加入 %s。"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/models/dispatch_campaign.py:0
+#, python-format
+msgid "%d slot(s) created."
+msgstr "已建立 %d 個時段。"
+
+#. module: dispatch_shift
+#: model:ir.model.constraint,message:dispatch_shift.constraint_dispatch_shift_slot_template_date_uniq
+msgid "A slot already exists for this template on this date."
+msgstr "此範本在此日期已存在一個時段。"
+
+#. module: dispatch_shift
+#: model:res.groups,name:dispatch_shift.group_dispatch_manager
+msgid "Administrator"
+msgstr "管理員"
+
+#. module: dispatch_shift
+#: model:ir.model.fields.selection,name:dispatch_shift.selection__dispatch_shift_template__shift_label__afternoon
+msgid "Afternoon"
+msgstr "下午"
+
+#. module: dispatch_shift
+#: model:ir.model.constraint,message:dispatch_shift.constraint_dispatch_shift_application_employee_slot_uniq
+msgid "An employee can only apply once per slot."
+msgstr "每位員工每個時段只能申請一次。"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_form
+msgid "Application"
+msgstr "申請"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/models/dispatch_shift_application.py:0
+#, python-format
+msgid "Application cancelled."
+msgstr "申請已取消。"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/models/dispatch_shift_application.py:0
+#, python-format
+msgid "Application confirmed."
+msgstr "申請已確認。"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/models/dispatch_shift_application.py:0
+#, python-format
+msgid "Application rejected."
+msgstr "申請已拒絕。"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_slot__application_ids
+#: model:ir.actions.act_window,name:dispatch_shift.dispatch_shift_application_action
+#: model:ir.ui.menu,name:dispatch_shift.menu_dispatch_shift_application
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_list
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_slot_view_form
+msgid "Applications"
+msgstr "申請"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_slot__applied_count
+#: model:ir.model.fields.selection,name:dispatch_shift.selection__dispatch_shift_application__state__applied
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_search
+#, python-format
+msgid "Applied"
+msgstr "已申請"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_application__applied_at
+msgid "Applied At"
+msgstr "申請時間"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "Applications Blocked"
+msgstr "申請已封鎖"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "Apply for Selected Shifts"
+msgstr "申請所選班次"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_form
+msgid "Are you sure you want to cancel this campaign?"
+msgstr "您確定要取消此活動嗎？"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_slot__seats_available
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_slot_view_search
+msgid "Available"
+msgstr "可用"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "Available Campaigns"
+msgstr "可報名活動"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "Back"
+msgstr "返回"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "Blocked"
+msgstr "已封鎖"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#: model_terms:mail.template,body_html:dispatch_shift.mail_template_dispatch_campaign_invite
+#, python-format
+msgid "Browse Shifts"
+msgstr "瀏覽班次"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_application__campaign_id
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_slot__campaign_id
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_template__campaign_id
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_campaign_invite__campaign_id
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_search
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_template_view_search
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_slot_view_search
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_search
+#, python-format
+msgid "Campaign"
+msgstr "活動"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_form
+msgid "Campaign Name"
+msgstr "活動名稱"
+
+#. module: dispatch_shift
+#: model:ir.actions.act_window,name:dispatch_shift.dispatch_campaign_action
+#: model:ir.ui.menu,name:dispatch_shift.menu_dispatch_campaign
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_list
+msgid "Campaigns"
+msgstr "活動"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_form
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_slot_view_form
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_form
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_list
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_invite_view_form
+#, python-format
+msgid "Cancel"
+msgstr "取消"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "Cancel Application"
+msgstr "取消申請"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_slot_view_form
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_form
+msgid "Cancel this application?"
+msgstr "取消此申請？"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "Cancel this shift?"
+msgstr "取消此班次？"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#: model:ir.model.fields.selection,name:dispatch_shift.selection__dispatch_campaign__state__cancelled
+#: model:ir.model.fields.selection,name:dispatch_shift.selection__dispatch_shift_application__state__cancelled
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_search
+#, python-format
+msgid "Cancelled"
+msgstr "已取消"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/models/dispatch_shift_application.py:0
+#, python-format
+msgid "Cannot work more than %d consecutive days. Please adjust your selection."
+msgstr "不能連續工作超過 %d 天。請調整您的選擇。"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_slot__capacity
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_template__capacity
+msgid "Capacity"
+msgstr "容量"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_campaign_invite__channel
+msgid "Channel"
+msgstr "管道"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_campaign__client_id
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_search
+msgid "Client"
+msgstr "客戶"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "Client:"
+msgstr "客戶："
+
+#. module: dispatch_shift
+#: model_terms:mail.template,body_html:dispatch_shift.mail_template_dispatch_campaign_invite
+msgid "Click the button below to browse available shifts and sign up."
+msgstr "請點擊下方按鈕瀏覽可用班次並報名。"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_form
+msgid "Close"
+msgstr "關閉"
+
+#. module: dispatch_shift
+#: model:ir.model.fields.selection,name:dispatch_shift.selection__dispatch_campaign__state__closed
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_search
+msgid "Closed"
+msgstr "已關閉"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "Communication History"
+msgstr "溝通歷史記錄"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_form
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_list
+msgid "Confirm"
+msgstr "確認"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_slot__confirmed_count
+#: model:ir.model.fields.selection,name:dispatch_shift.selection__dispatch_shift_application__state__confirmed
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_search
+#, python-format
+msgid "Confirmed"
+msgstr "已確認"
+
+#. module: dispatch_shift
+#: model:ir.ui.menu,name:dispatch_shift.menu_dispatch_shift_config
+msgid "Configuration"
+msgstr "配置"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_application__slot_date
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_slot__date
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_slot_view_search
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_search
+#, python-format
+msgid "Date"
+msgstr "日期"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.view_employee_form_inherit_dispatch
+msgid "Dispatch"
+msgstr "派遣"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/models/hr_employee.py:0
+#: model:ir.model.fields,field_description:dispatch_shift.field_hr_employee__dispatch_application_count
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.view_employee_form_inherit_dispatch
+#, python-format
+msgid "Dispatch Applications"
+msgstr "派遣申請"
+
+#. module: dispatch_shift
+#: model:ir.model,name:dispatch_shift.model_dispatch_campaign
+msgid "Dispatch Campaign"
+msgstr "派遣活動"
+
+#. module: dispatch_shift
+#: model:ir.ui.menu,name:dispatch_shift.menu_dispatch_shift_root
+#: model:res.groups.privilege,name:dispatch_shift.res_groups_privilege_dispatch
+msgid "Dispatch Shift"
+msgstr "派遣班次"
+
+#. module: dispatch_shift
+#: model:ir.model,name:dispatch_shift.model_dispatch_shift_application
+msgid "Dispatch Shift Application"
+msgstr "派遣班次申請"
+
+#. module: dispatch_shift
+#: model:ir.model,name:dispatch_shift.model_dispatch_shift_slot
+msgid "Dispatch Shift Slot"
+msgstr "派遣班次時段"
+
+#. module: dispatch_shift
+#: model:ir.model,name:dispatch_shift.model_dispatch_shift_template
+msgid "Dispatch Shift Template"
+msgstr "派遣班次範本"
+
+#. module: dispatch_shift
+#: model:mail.template,name:dispatch_shift.mail_template_dispatch_campaign_invite
+msgid "Dispatch: Campaign Invitation"
+msgstr "派遣：活動邀請"
+
+#. module: dispatch_shift
+#: model:mail.template,name:dispatch_shift.mail_template_dispatch_employee_link
+msgid "Dispatch: Send Portal Link"
+msgstr "派遣：發送入口網站連結"
+
+#. module: dispatch_shift
+#: model:ir.model.fields.selection,name:dispatch_shift.selection__dispatch_campaign__state__draft
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_search
+msgid "Draft"
+msgstr "草稿"
+
+#. module: dispatch_shift
+#: model:ir.model.fields.selection,name:dispatch_shift.selection__dispatch_campaign_invite__channel__email
+msgid "Email"
+msgstr "電子郵件"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_application__employee_id
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_search
+msgid "Employee"
+msgstr "員工"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/models/dispatch_shift_application.py:0
+#, python-format
+msgid "Employee %s has been frozen from this campaign."
+msgstr "員工 %s 已被封鎖，無法申請此活動。"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/models/dispatch_shift_application.py:0
+#, python-format
+msgid "Employee %s has been unfrozen from this campaign."
+msgstr "員工 %s 已被解除封鎖，可以申請此活動。"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/models/dispatch_shift_application.py:0
+#, python-format
+msgid "Employee %s is frozen from campaign %s and cannot apply."
+msgstr "員工 %s 已被封鎖，無法申請活動 %s。"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_campaign_invite__employee_ids
+#: model:ir.actions.act_window,name:dispatch_shift.dispatch_employee_action
+#: model:ir.ui.menu,name:dispatch_shift.menu_dispatch_employee
+msgid "Employees"
+msgstr "員工"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_campaign__date_end
+msgid "End Date"
+msgstr "結束日期"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_slot__end_hour
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_template__end_hour
+msgid "End Hour"
+msgstr "結束時間"
+
+#. module: dispatch_shift
+#: model:ir.model.fields.selection,name:dispatch_shift.selection__dispatch_shift_template__shift_label__evening
+msgid "Evening"
+msgstr "晚上"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_invite_view_form
+msgid "Filter employees by tags..."
+msgstr "依標籤篩選員工..."
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_campaign_invite__tag_ids
+msgid "Filter by Tags"
+msgstr "依標籤篩選"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_form
+msgid "Frozen"
+msgstr "已封鎖"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_campaign__frozen_employee_ids
+#. odoo-python
+#: code:addons/dispatch_shift/models/dispatch_campaign.py:0
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_form
+#, python-format
+msgid "Frozen Employees"
+msgstr "已封鎖員工"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,help:dispatch_shift.field_dispatch_campaign__frozen_employee_ids
+msgid "Employees who are blocked from applying to shifts in this campaign."
+msgstr "被禁止申請此活動班次的員工。"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "from applying to shifts in this campaign. Please contact your dispatch coordinator if you believe this is an error."
+msgstr "申請此活動的班次。如果您認為這是錯誤，請聯繫您的派遣協調人員。"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "%d shift(s) applied successfully."
+msgstr "已成功申請 %d 個班次。"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_slot__is_full
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_slot_view_search
+#, python-format
+msgid "Full"
+msgstr "已滿"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_form
+msgid "Generate Slots"
+msgstr "產生時段"
+
+#. module: dispatch_shift
+#: model_terms:mail.template,body_html:dispatch_shift.mail_template_dispatch_employee_link
+#: model_terms:mail.template,body_html:dispatch_shift.mail_template_dispatch_campaign_invite
+msgid "Hello"
+msgstr "您好"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.portal_invalid_token
+msgid "Invalid or Expired Link"
+msgstr "無效或已過期的連結"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_invite_view_form
+msgid "Invite"
+msgstr "邀請"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/models/dispatch_campaign.py:0
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_form
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_invite_view_form
+#, python-format
+msgid "Invite Employees"
+msgstr "邀請員工"
+
+#. module: dispatch_shift
+#: model:ir.model,name:dispatch_shift.model_dispatch_campaign_invite
+msgid "Invite Employees to Campaign"
+msgstr "邀請員工參加活動"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_campaign__invite_only
+msgid "Invite Only"
+msgstr "僅限邀請"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_form
+msgid "Invited"
+msgstr "已邀請"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.portal_browse
+msgid "Join waitlist"
+msgstr "加入候補"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/models/dispatch_campaign.py:0
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_campaign__invited_employee_ids
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_form
+#, python-format
+msgid "Invited Employees"
+msgstr "已邀請員工"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/wizard/dispatch_campaign_invite.py:0
+#, python-format
+msgid "Invitations Sent"
+msgstr "邀請已發送"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_campaign__max_consecutive_days
+msgid "Max Consecutive Days"
+msgstr "最大連續天數"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "Max consecutive days:"
+msgstr "最大連續天數："
+
+#. module: dispatch_shift
+#: model:ir.model.fields,help:dispatch_shift.field_dispatch_campaign__max_consecutive_days
+msgid "Maximum number of consecutive working days allowed for an employee."
+msgstr "允許員工連續工作的最大天數。"
+
+#. module: dispatch_shift
+#: model:ir.model.fields.selection,name:dispatch_shift.selection__dispatch_shift_template__shift_label__morning
+msgid "Morning"
+msgstr "上午"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "My Shifts"
+msgstr "我的班次"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_campaign__name
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_template__name
+msgid "Name"
+msgstr "名稱"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "No slots selected."
+msgstr "未選擇任何時段。"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "No campaigns are currently open."
+msgstr "目前沒有進行中的活動。"
+
+#. module: dispatch_shift
+#: model:ir.model.fields.selection,name:dispatch_shift.selection__dispatch_campaign__state__open
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_form
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_search
+msgid "Open"
+msgstr "開啟"
+
+#. module: dispatch_shift
+#: model:ir.ui.menu,name:dispatch_shift.menu_dispatch_shift_operations
+msgid "Operations"
+msgstr "作業"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/models/dispatch_campaign.py:0
+#, python-format
+msgid "Please add at least one shift template before generating slots."
+msgstr "請在產生時段前至少新增一個班次範本。"
+
+#. module: dispatch_shift
+#: model_terms:mail.template,body_html:dispatch_shift.mail_template_dispatch_employee_link
+#: model_terms:mail.template,body_html:dispatch_shift.mail_template_dispatch_campaign_invite
+msgid "Please keep this link private and do not share it with others."
+msgstr "請妥善保管此連結，不要與他人分享。"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_slot_view_form
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_form
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_list
+msgid "Reject"
+msgstr "拒絕"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_slot_view_form
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_form
+msgid "Reject this application?"
+msgstr "拒絕此申請？"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#: model:ir.model.fields.selection,name:dispatch_shift.selection__dispatch_shift_application__state__rejected
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_search
+#, python-format
+msgid "Rejected"
+msgstr "已拒絕"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_form
+msgid "Reset to Draft"
+msgstr "重設為草稿"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "Shift cancelled."
+msgstr "班次已取消。"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_search
+msgid "Search Applications"
+msgstr "搜尋申請"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_search
+msgid "Search Campaigns"
+msgstr "搜尋活動"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_slot_view_search
+msgid "Search Slots"
+msgstr "搜尋時段"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_template_view_search
+msgid "Search Templates"
+msgstr "搜尋範本"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/wizard/dispatch_campaign_invite.py:0
+#, python-format
+msgid "Please select at least one employee to invite."
+msgstr "請至少選擇一位員工進行邀請。"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_form
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_list
+msgid "Reject ALL applications for this employee in this campaign? The employee will be blocked from applying again."
+msgstr "拒絕此員工在此活動中的所有申請？該員工將被封鎖，無法再次申請。"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_form
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_list
+msgid "Block"
+msgstr "封鎖"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_invite_view_form
+msgid "Select All"
+msgstr "全選"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_invite_view_form
+msgid "Select all employees matching the tag filter"
+msgstr "選取所有符合標籤篩選條件的員工"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_invite_view_form
+msgid "Select employees to invite..."
+msgstr "選擇要邀請的員工..."
+
+#. module: dispatch_shift
+#: model:ir.model.fields,help:dispatch_shift.field_dispatch_campaign_invite__tag_ids
+msgid "Select tags to filter the employee list. Leave empty to show all."
+msgstr "選擇標籤以篩選員工清單。留空以顯示全部。"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_campaign_invite__send_mail
+msgid "Send Invitation Email"
+msgstr "發送邀請郵件"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.view_employee_form_inherit_dispatch
+msgid "Send Dispatch Link"
+msgstr "發送派遣連結"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_template__shift_label
+#, python-format
+msgid "Shift"
+msgstr "班次"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "Shift Application"
+msgstr "班次申請"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_slot_view_form
+msgid "Shift Slot"
+msgstr "班次時段"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/models/dispatch_campaign.py:0
+#: model:ir.actions.act_window,name:dispatch_shift.dispatch_shift_slot_action
+#: model:ir.ui.menu,name:dispatch_shift.menu_dispatch_shift_slot
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_slot_view_list
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_slot_view_calendar
+#, python-format
+msgid "Shift Slots"
+msgstr "班次時段"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_template_view_form
+msgid "Shift Template"
+msgstr "班次範本"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/models/dispatch_campaign.py:0
+#: model:ir.actions.act_window,name:dispatch_shift.dispatch_shift_template_action
+#: model:ir.ui.menu,name:dispatch_shift.menu_dispatch_shift_template
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_template_view_list
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_form
+#, python-format
+msgid "Shift Templates"
+msgstr "班次範本"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_application__slot_id
+msgid "Slot"
+msgstr "時段"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/models/dispatch_shift_application.py:0
+#, python-format
+msgid "Slot is full. Application moved to waitlist."
+msgstr "時段已滿。申請已移至候補名單。"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_template__slot_ids
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_campaign__slot_ids
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_form
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_list
+msgid "Slots"
+msgstr "時段"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/models/dispatch_campaign.py:0
+#, python-format
+msgid "Slots Generated"
+msgstr "時段已產生"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_campaign__date_start
+msgid "Start Date"
+msgstr "開始日期"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_slot__start_hour
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_template__start_hour
+msgid "Start Hour"
+msgstr "開始時間"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_campaign__state
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_application__state
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_search
+#, python-format
+msgid "Status"
+msgstr "狀態"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_application__store_id
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_slot__store_id
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_template__store_id
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_template_view_search
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_slot_view_search
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_search
+#, python-format
+msgid "Store"
+msgstr "門市"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_slot__template_id
+msgid "Template"
+msgstr "範本"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_form
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_campaign_view_list
+msgid "Templates"
+msgstr "範本"
+
+#. module: dispatch_shift
+#: model_terms:mail.template,body_html:dispatch_shift.mail_template_dispatch_employee_link
+#: model_terms:mail.template,body_html:dispatch_shift.mail_template_dispatch_campaign_invite
+msgid "Thank you!"
+msgstr "謝謝！"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.portal_invalid_token
+msgid "The link you used is no longer valid. Please contact your dispatch coordinator for a new link."
+msgstr "您使用的連結已失效。請聯繫您的派遣協調人員以取得新連結。"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "Time"
+msgstr "時間"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/models/dispatch_shift_application.py:0
+#, python-format
+msgid "Time overlap: you already have a shift from %(start)s to %(end)s on %(date)s."
+msgstr "時間重疊：您在 %(date)s 已有一個從 %(start)s 到 %(end)s 的班次。"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_campaign__timezone
+msgid "Timezone"
+msgstr "時區"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_form
+msgid "Unfreeze from Campaign"
+msgstr "解除活動封鎖"
+
+#. module: dispatch_shift
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_form
+msgid "Unfreeze this employee? They will be able to apply to this campaign again."
+msgstr "解除此員工的封鎖？他們將可以重新申請此活動。"
+
+#. module: dispatch_shift
+#: model:res.groups,name:dispatch_shift.group_dispatch_user
+msgid "User"
+msgstr "使用者"
+
+#. module: dispatch_shift
+#: model_terms:mail.template,body_html:dispatch_shift.mail_template_dispatch_employee_link
+msgid "View My Shifts"
+msgstr "查看我的班次"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#: model:ir.model.fields,field_description:dispatch_shift.field_dispatch_shift_slot__waitlisted_count
+#: model:ir.model.fields.selection,name:dispatch_shift.selection__dispatch_shift_application__state__waitlisted
+#: model_terms:ir.ui.view,arch_db:dispatch_shift.dispatch_shift_application_view_search
+#, python-format
+msgid "Waitlisted"
+msgstr "已候補"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "Welcome,"
+msgstr "歡迎，"
+
+#. module: dispatch_shift
+#: model:ir.model.fields,help:dispatch_shift.field_dispatch_campaign__invite_only
+msgid "When enabled, only invited employees can see this campaign in their portal."
+msgstr "啟用後，只有被邀請的員工才能在入口網站中看到此活動。"
+
+#. module: dispatch_shift
+#: model_terms:mail.template,body_html:dispatch_shift.mail_template_dispatch_employee_link
+msgid "You can access your Dispatch Shift portal using the link below. Use this link to browse available shifts and apply for the ones you want."
+msgstr "您可以使用以下連結存取您的派遣班次入口網站。使用此連結瀏覽可用班次並申請您想要的班次。"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "You are blocked"
+msgstr "您已被封鎖"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "You are blocked from applying to shifts in this campaign."
+msgstr "您已被封鎖，無法申請此活動的班次。"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "You have no shifts yet. Browse a campaign above to apply!"
+msgstr "您目前還沒有班次。請瀏覽上方的活動來申請！"
+
+#. module: dispatch_shift
+#: model_terms:mail.template,body_html:dispatch_shift.mail_template_dispatch_campaign_invite
+msgid "You have been invited to participate in"
+msgstr "您已被邀請參加"
+
+#. module: dispatch_shift
+#: model:mail.template,subject:dispatch_shift.mail_template_dispatch_employee_link
+msgid "Your Dispatch Shift Portal Link"
+msgstr "您的派遣班次入口網站連結"
+
+#. module: dispatch_shift
+#: model:mail.template,subject:dispatch_shift.mail_template_dispatch_campaign_invite
+msgid "You're invited to {{ ctx.get('campaign_name', 'a campaign') }}"
+msgstr "您已被邀請參加 {{ ctx.get('campaign_name', '活動') }}"
+
+#. module: dispatch_shift
+#. odoo-python
+#: code:addons/dispatch_shift/controllers/portal.py:0
+#, python-format
+msgid "waitlist"
+msgstr "候補"

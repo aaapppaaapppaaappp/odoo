@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_dispatch_shift_root"
+              name="Dispatch Shift"
+              web_icon="dispatch_shift,static/description/icon.png"
+              sequence="100"/>
+
+    <menuitem id="menu_dispatch_shift_operations"
+              name="Operations"
+              parent="menu_dispatch_shift_root"
+              sequence="10"/>
+
+    <menuitem id="menu_dispatch_campaign"
+              name="Campaigns"
+              parent="menu_dispatch_shift_operations"
+              action="dispatch_campaign_action"
+              sequence="10"/>
+
+    <menuitem id="menu_dispatch_shift_slot"
+              name="Shift Slots"
+              parent="menu_dispatch_shift_operations"
+              action="dispatch_shift_slot_action"
+              sequence="20"/>
+
+    <menuitem id="menu_dispatch_shift_application"
+              name="Applications"
+              parent="menu_dispatch_shift_operations"
+              action="dispatch_shift_application_action"
+              sequence="30"/>
+
+    <menuitem id="menu_dispatch_shift_config"
+              name="Configuration"
+              parent="menu_dispatch_shift_root"
+              groups="group_dispatch_manager"
+              sequence="90"/>
+
+    <menuitem id="menu_dispatch_employee"
+              name="Employees"
+              parent="menu_dispatch_shift_config"
+              action="dispatch_employee_action"
+              sequence="10"/>
+
+    <menuitem id="menu_dispatch_shift_template"
+              name="Shift Templates"
+              parent="menu_dispatch_shift_config"
+              action="dispatch_shift_template_action"
+              sequence="20"/>
+</odoo>

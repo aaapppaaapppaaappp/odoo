@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="dispatch_campaign_invite_view_form" model="ir.ui.view">
+        <field name="name">dispatch.campaign.invite.form</field>
+        <field name="model">dispatch.campaign.invite</field>
+        <field name="arch" type="xml">
+            <form string="Invite Employees">
+                <field name="campaign_id" invisible="1"/>
+                <group>
+                    <label for="tag_ids"/>
+                    <div class="d-flex align-items-center gap-2">
+                        <field name="tag_ids" widget="many2many_tags"
+                               options="{'color_field': 'color'}"
+                               placeholder="Filter employees by tags..."
+                               class="flex-grow-1"/>
+                        <button name="action_add_all_filtered" type="object"
+                                string="Select All" title="Select all employees matching the tag filter"
+                                class="btn-link p-0 text-nowrap" icon="fa-users"/>
+                    </div>
+                </group>
+                <group>
+                    <field name="employee_ids" widget="many2many_tags"
+                           placeholder="Select employees to invite..."
+                           options="{'no_create': True}"/>
+                </group>
+                <group>
+                    <field name="send_mail"/>
+                    <field name="channel" invisible="not send_mail"/>
+                </group>
+                <footer>
+                    <button name="action_invite" string="Invite"
+                            type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary"
+                            special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

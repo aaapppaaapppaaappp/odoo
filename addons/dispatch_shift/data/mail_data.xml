@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="mail_template_dispatch_employee_link" model="mail.template">
+            <field name="name">Dispatch: Send Portal Link</field>
+            <field name="model_id" ref="hr.model_hr_employee"/>
+            <field name="subject">Your Dispatch Shift Portal Link</field>
+            <field name="email_from">{{ user.email }}</field>
+            <field name="email_to">{{ object.work_email }}</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px;">
+                    <p>Hello <t t-out="object.name"/>,</p>
+                    <p>
+                        You can access your Dispatch Shift portal using the link below.
+                        Use this link to browse available shifts and apply for the ones you want.
+                    </p>
+                    <p style="margin: 16px 0px;">
+                        <a t-att-href="object._get_portal_url()"
+                           style="background-color: #875A7B; padding: 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 14px;">
+                            View My Shifts
+                        </a>
+                    </p>
+                    <p>
+                        Please keep this link private and do not share it with others.
+                    </p>
+                    <p>Thank you!</p>
+                </div>
+            </field>
+        </record>
+        <record id="mail_template_dispatch_campaign_invite" model="mail.template">
+            <field name="name">Dispatch: Campaign Invitation</field>
+            <field name="model_id" ref="hr.model_hr_employee"/>
+            <field name="subject">You're invited to {{ ctx.get('campaign_name', 'a campaign') }}</field>
+            <field name="email_from">{{ user.email }}</field>
+            <field name="email_to">{{ object.work_email }}</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px;">
+                    <p>Hello <t t-out="object.name"/>,</p>
+                    <p>
+                        You have been invited to participate in
+                        <strong><t t-out="ctx.get('campaign_name', 'a campaign')"/></strong>.
+                    </p>
+                    <p>
+                        Click the button below to browse available shifts and sign up.
+                    </p>
+                    <p style="margin: 16px 0px;">
+                        <a t-att-href="'/dispatch/campaign/%s/browse?access_token=%s' % (ctx.get('campaign_id', ''), object.access_token)"
+                           style="background-color: #875A7B; padding: 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 14px;">
+                            Browse Shifts
+                        </a>
+                    </p>
+                    <p>
+                        Please keep this link private and do not share it with others.
+                    </p>
+                    <p>Thank you!</p>
+                </div>
+            </field>
+        </record>
+    </data>
+</odoo>

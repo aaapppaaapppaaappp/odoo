@@ -1,0 +1,1335 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* resource_booking
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: Chinese (Traditional Han script)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/resource_booking_combination.py:0
+#, python-format
+msgid "%(resources)s"
+msgstr "%(resources)s"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/resource_booking_combination.py:0
+#, python-format
+msgid "%(resources)s (using calendar %(calendar)s)"
+msgstr "%(resources)s（使用日曆 %(calendar)s）"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.alert_availability_lost
+msgid ""
+"<br/>\n"
+"                        Error details:"
+msgstr ""
+"<br/>\n"
+"                        錯誤詳情："
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid ""
+"<i class=\"fa fa-calendar\"/>\n"
+"                            Reschedule"
+msgstr ""
+"<i class=\"fa fa-calendar\"/>\n"
+"                            重新排程"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid ""
+"<i class=\"fa fa-calendar\"/>\n"
+"                            Schedule"
+msgstr ""
+"<i class=\"fa fa-calendar\"/>\n"
+"                            排程"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid ""
+"<i class=\"fa fa-comment\"/>\n"
+"                        Feedback"
+msgstr ""
+"<i class=\"fa fa-comment\"/>\n"
+"                        回饋意見"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid ""
+"<i class=\"fa fa-times\"/>\n"
+"                                Cancel this booking"
+msgstr ""
+"<i class=\"fa fa-times\"/>\n"
+"                                取消此預約"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid ""
+"<i class=\"fa fa-times\"/>\n"
+"                            Cancel"
+msgstr ""
+"<i class=\"fa fa-times\"/>\n"
+"                            取消"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_header
+msgid "<small class=\"text-end\">Stage:</small>"
+msgstr "<small class=\"text-end\">階段：</small>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "<span>Preview</span>"
+msgstr "<span>預覽</span>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "<strong>Advice:</strong>"
+msgstr "<strong>建議：</strong>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "<strong>Booked resources:</strong>"
+msgstr "<strong>已預約資源：</strong>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "<strong>Dates:</strong>"
+msgstr "<strong>日期：</strong>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "<strong>Duration:</strong>"
+msgstr "<strong>時長：</strong>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "<strong>Location:</strong>"
+msgstr "<strong>地點：</strong>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "<strong>Meeting URL:</strong>"
+msgstr "<strong>會議網址：</strong>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "<strong>Requested by:</strong>"
+msgstr "<strong>申請人：</strong>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.alert_availability_lost
+msgid "<strong>The chosen schedule is no longer available.</strong>"
+msgstr "<strong>所選的排程時段已無法使用。</strong>"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "<strong>Type:</strong>"
+msgstr "<strong>類型：</strong>"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__access_warning
+msgid "Access warning"
+msgstr "存取警告"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_mail_activity_type__category
+msgid "Action"
+msgstr "動作"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__message_needaction
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__message_needaction
+msgid "Action Needed"
+msgstr "需要採取行動"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_mail_activity_type__category
+msgid ""
+"Actions may trigger specific behavior like opening calendar view or "
+"automatically mark as done when a document is uploaded"
+msgstr ""
+"動作可能觸發特定行為，例如開啟日曆視圖或在上傳文件時自動標記為完成"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__active
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__active
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__active
+msgid "Active"
+msgstr "啟用"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_ids
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_ids
+msgid "Activities"
+msgstr "活動"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_mail_activity
+msgid "Activity"
+msgstr "活動"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_exception_decoration
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "活動異常圖示"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_state
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_state
+msgid "Activity State"
+msgstr "活動狀態"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_mail_activity_type
+msgid "Activity Type"
+msgstr "活動類型"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_type_icon
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "活動類型圖示"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_mail_activity_schedule
+msgid "Activity schedule plan Wizard"
+msgstr "活動排程計畫精靈"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "All times are displayed using this timezone:"
+msgstr "所有時間均以此時區顯示："
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__duration
+msgid ""
+"Amount of time that the resources will be booked and unavailable for others."
+msgstr ""
+"資源被預約並且無法供其他人使用的時間量。"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_combination_view_form
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_type_view_form
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Archived"
+msgstr "已封存"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "Are you sure?"
+msgstr "您確定嗎？"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__message_attachment_count
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__message_attachment_count
+msgid "Attachment Count"
+msgstr "附件數目"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__partner_ids
+msgid "Attendees"
+msgstr "參加者"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__combination_auto_assign
+msgid "Auto assigned"
+msgstr "自動分配"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Auto-assigned:"
+msgstr "自動分配："
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__resource_calendar_id
+msgid "Availability Calendar"
+msgstr "可用性日曆"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__combination_rel_ids
+msgid "Available resource combinations"
+msgstr "可用資源組合"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_resource_booking_combination
+msgid "Bookable resource combinations"
+msgstr "可預約資源組合"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_header
+msgid "Booking"
+msgstr "預約"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__booking_activity_ids
+msgid "Booking Activities"
+msgstr "預約活動"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__booking_count
+msgid "Booking Count"
+msgstr "預約數量"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__booking_count
+msgid "Booking count"
+msgstr "預約數量"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__duration
+msgid "Booking default duration."
+msgstr "預約預設時長。"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_my_bookings
+msgid "Booking ref."
+msgstr "預約編號"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/resource_booking_combination.py:0
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__type_count
+#, python-format
+msgid "Booking types"
+msgstr "預約類型"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/resource_booking_combination.py:0
+#: code:addons/resource_booking/models/resource_booking_type.py:0
+#: model:ir.actions.act_window,name:resource_booking.resource_booking_action
+#: model:ir.model.fields,field_description:resource_booking.field_res_partner__resource_booking_ids
+#: model:ir.model.fields,field_description:resource_booking.field_res_users__resource_booking_ids
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__booking_ids
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__booking_ids
+#: model:ir.ui.menu,name:resource_booking.resource_booking_menu
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_breadcrumbs
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_my_bookings
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_my_home
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_calendar
+#: model_terms:ir.ui.view,arch_db:resource_booking.view_partner_form
+#, python-format
+msgid "Bookings"
+msgstr "預約"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__booking_ids
+msgid "Bookings available for this type"
+msgstr "此類型可用的預約"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_calendar_event
+msgid "Calendar Event"
+msgstr "日曆事件"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "Cancel"
+msgstr "取消"
+
+#. module: resource_booking
+#: model:ir.model.fields.selection,name:resource_booking.selection__resource_booking__state__canceled
+msgid "Canceled"
+msgstr "已取消"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/resource_booking.py:0
+#, python-format
+msgid ""
+"Cannot schedule these bookings because no resources are selected for them:\n"
+"\n"
+"- %s"
+msgstr ""
+"無法排程以下預約，因為沒有為其選擇資源：\n"
+"\n"
+"- %s"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/resource_booking.py:0
+#, python-format
+msgid ""
+"Cannot schedule these bookings because they do not fit in their type or resources calendars, or because all resources are busy:\n"
+"\n"
+"- %s"
+msgstr ""
+"無法排程以下預約，因為它們不符合其類型或資源日曆，或是所有資源都已被佔用：\n"
+"\n"
+"- %s"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__combination_assignment
+msgid ""
+"Choose how to auto-assign resource combinations. It has no effect if "
+"assigned manually."
+msgstr ""
+"選擇如何自動分配資源組合。手動分配時此設定無效。"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.alert_availability_lost
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "Close"
+msgstr "關閉"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__combination_id
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
+msgid "Combination"
+msgstr "組合"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__combination_assignment
+msgid "Combination Assignment"
+msgstr "組合分配"
+
+#. module: resource_booking
+#: model:ir.ui.menu,name:resource_booking.resource_booking_combination_menu
+msgid "Combinations"
+msgstr "組合"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__company_id
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_type_view_search
+msgid "Company"
+msgstr "公司"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__company_id
+msgid "Company where this booking type is available."
+msgstr "此預約類型可用的公司。"
+
+#. module: resource_booking
+#: model:ir.ui.menu,name:resource_booking.resource_booking_type_configuration_menu
+msgid "Configuration"
+msgstr "配置"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Confirm"
+msgstr "確認"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "Confirm booking"
+msgstr "確認預約"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid ""
+"Confirm that the requesting partner and yourself will attend the scheduled "
+"meeting."
+msgstr ""
+"確認申請合作夥伴與您本人將出席已排程的會議。"
+
+#. module: resource_booking
+#: model:ir.model.fields.selection,name:resource_booking.selection__resource_booking__state__confirmed
+msgid "Confirmed"
+msgstr "已確認"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_res_partner
+msgid "Contact"
+msgstr "聯絡人"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__create_uid
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__create_uid
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__create_uid
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__create_uid
+msgid "Created by"
+msgstr "建立人員"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__create_date
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__create_date
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__create_date
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__create_date
+msgid "Created on"
+msgstr "建立於"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_header
+msgid "Current state of this booking"
+msgstr "此預約的目前狀態"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__access_url
+msgid "Customer Portal URL"
+msgstr "客戶入口網址"
+
+#. module: resource_booking
+#: model:resource.booking.type,name:resource_booking.resource_booking_type_customer
+msgid "Customer meeting"
+msgstr "客戶會議"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_my_bookings
+msgid "Date"
+msgstr "日期"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.message_combination_assigned
+msgid ""
+"Dear user,\n"
+"            <br/>\n"
+"            You have been assigned to the"
+msgstr ""
+"親愛的使用者，\n"
+"            <br/>\n"
+"            您已被指派至"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__alarm_ids
+msgid "Default reminders"
+msgstr "預設提醒"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__categ_ids
+msgid "Default tags"
+msgstr "預設標籤"
+
+#. module: resource_booking
+#: model_terms:ir.actions.act_window,help:resource_booking.resource_booking_combination_action
+msgid "Define bookable resource combinations."
+msgstr "定義可預約的資源組合。"
+
+#. module: resource_booking
+#: model_terms:ir.actions.act_window,help:resource_booking.resource_booking_type_action
+msgid "Define resource booking types."
+msgstr "定義資源預約類型。"
+
+#. module: resource_booking
+#: model_terms:ir.actions.act_window,help:resource_booking.resource_booking_action
+msgid "Define resource bookings."
+msgstr "定義資源預約。"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__description
+msgid "Description"
+msgstr "說明"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__display_name
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__display_name
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__display_name
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__display_name
+msgid "Display Name"
+msgstr "顯示名稱"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__duration
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__duration
+msgid "Duration"
+msgstr "時長"
+
+#. module: resource_booking
+#: model:ir.model.constraint,message:resource_booking.constraint_resource_booking_type_duration_positive
+msgid "Duration must be positive."
+msgstr "時長必須為正數。"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "Duration:"
+msgstr "時長："
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/mail_activity.py:0
+#, python-format
+msgid "Feedback: %(feedback)s"
+msgstr "回饋意見：%(feedback)s"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__message_follower_ids
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__message_follower_ids
+msgid "Followers"
+msgstr "關注人"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__message_partner_ids
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "關注人（業務夥伴）"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__activity_type_icon
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Font awesome 圖示，例如 fa-tasks"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_combination__forced_calendar_id
+msgid "Force a specific calendar, instead of combining the resources'."
+msgstr "強制使用指定日曆，而非合併資源的日曆。"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__forced_calendar_id
+msgid "Forced calendar"
+msgstr "指定日曆"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "Go back"
+msgstr "返回"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_type_view_search
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
+msgid "Group By"
+msgstr "分組依據"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__has_message
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__has_message
+msgid "Has Message"
+msgstr "有訊息"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__id
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__id
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__id
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__id
+msgid "ID"
+msgstr "ID"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_exception_icon
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_exception_icon
+msgid "Icon"
+msgstr "圖示"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__activity_exception_icon
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "用於指示異常活動的圖示。"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__message_needaction
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "若勾選，新訊息需要您注意。"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__message_has_error
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "若勾選，部分訊息有遞送錯誤。"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "If you cancel this booking:"
+msgstr "如果您取消此預約："
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__slot_duration
+msgid "Interval offered to start each resource booking."
+msgstr "每次資源預約可開始的時間間隔。"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Invite requesting partner to portal."
+msgstr "邀請申請合作夥伴至入口網站。"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
+msgid "Involving me"
+msgstr "與我相關"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__message_is_follower
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__message_is_follower
+msgid "Is Follower"
+msgstr "是關注人"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__is_modifiable
+msgid "Is Modifiable"
+msgstr "是否可修改"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__is_overdue
+msgid "Is Overdue"
+msgstr "是否逾期"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "It will be unscheduled."
+msgstr "預約排程將被取消。"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "It will disappear from your bookings list."
+msgstr "它將從您的預約列表中消失。"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__write_uid
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__write_uid
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__write_uid
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__write_uid
+msgid "Last Updated by"
+msgstr "最後更新者"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__write_date
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__write_date
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__write_date
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__write_date
+msgid "Last Updated on"
+msgstr "最後更新於"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__name
+msgid "Leave empty to autogenerate a booking name."
+msgstr "留空以自動產生預約名稱。"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__location
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__location
+msgid "Location"
+msgstr "地點"
+
+#. module: resource_booking
+#: model:res.groups,name:resource_booking.group_manager
+msgid "Manager"
+msgstr "管理員"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Manually assigned:"
+msgstr "手動分配："
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__meeting_id
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Meeting"
+msgstr "會議"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__videocall_location
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__videocall_location
+msgid "Meeting URL"
+msgstr "會議網址"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__meeting_id
+msgid "Meeting confirmed for this booking."
+msgstr "此預約的會議已確認。"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_type_view_form
+msgid "Meeting defaults"
+msgstr "會議預設值"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__alarm_ids
+msgid "Meetings will be created with these reminders by default."
+msgstr "會議將預設使用這些提醒建立。"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__categ_ids
+msgid "Meetings will be created with these tags by default."
+msgstr "會議將預設使用這些標籤建立。"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__message_has_error
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__message_has_error
+msgid "Message Delivery error"
+msgstr "訊息遞送錯誤"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "Message and communication history"
+msgstr "訊息及溝通歷史記錄"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__message_ids
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__message_ids
+msgid "Messages"
+msgstr "訊息"
+
+#. module: resource_booking
+#: model:ir.model.constraint,message:resource_booking.constraint_resource_booking_combination_required_if_event
+msgid "Missing resource booking combination."
+msgstr "缺少資源預約組合。"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__modifications_deadline
+msgid "Modifications Deadline"
+msgstr "修改截止期限"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__my_activity_date_deadline
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "我的活動截止時間"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__name
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__name
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__name
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__type_name
+msgid "Name"
+msgstr "名稱"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_calendar_event_id
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "下一個活動日曆事件"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_date_deadline
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "下一活動截止日期"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_summary
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_summary
+msgid "Next Activity Summary"
+msgstr "下一活動摘要"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_type_id
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_type_id
+msgid "Next Activity Type"
+msgstr "下一活動類型"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "Next month"
+msgstr "下個月"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "No free slots found this month."
+msgstr "本月未找到可用時段。"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/resource_booking.py:0
+#, python-format
+msgid "No resource combinations available on %s"
+msgstr "%s 沒有可用的資源組合"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__message_needaction_counter
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__message_needaction_counter
+msgid "Number of Actions"
+msgstr "動作數量"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__message_has_error_counter
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__message_has_error_counter
+msgid "Number of errors"
+msgstr "錯誤數量"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__message_needaction_counter
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "需要採取行動的訊息數量"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__message_has_error_counter
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "有遞送錯誤的訊息數量"
+
+#. module: resource_booking
+#: model:ir.model.constraint,message:resource_booking.constraint_resource_booking_unique_meeting_id
+msgid "Only one event per resource booking can exist."
+msgstr "每個資源預約只能存在一個事件。"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.mail_activity_schedule_view_form
+#: model_terms:ir.ui.view,arch_db:resource_booking.mail_activity_view_form_popup
+msgid "Open Resource Booking"
+msgstr "開啟資源預約"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Open a calendar to schedule a meeting for this booking request."
+msgstr "開啟日曆以排程此預約請求的會議。"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__user_id
+msgid "Organizer"
+msgstr "舉辦方"
+
+#. module: resource_booking
+#: model:ir.model.fields.selection,name:resource_booking.selection__resource_booking__state__pending
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
+msgid "Pending"
+msgstr "待處理"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__state
+msgid ""
+"Pending: No meeting scheduled.\n"
+"Scheduled: The requester has not confirmed attendance yet.\n"
+"Confirmed: Meeting scheduled, and requester attendance confirmed.\n"
+"Canceled: Meeting removed, booking archived."
+msgstr ""
+"待處理：尚未排程會議。\n"
+"已排程：申請人尚未確認出席。\n"
+"已確認：會議已排程，且申請人已確認出席。\n"
+"已取消：會議已移除，預約已封存。"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+msgid "Please confirm this is really what you want."
+msgstr "請確認這確實是您想要的。"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__access_url
+msgid "Portal Access URL"
+msgstr "入口網站訪問網址"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "Previous month"
+msgstr "上個月"
+
+#. module: resource_booking
+#: model:ir.model.fields.selection,name:resource_booking.selection__resource_booking_type__combination_assignment__random
+msgid "Randomly: order is not important"
+msgstr "隨機：順序不重要"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__partner_id
+msgid "Requester"
+msgstr "申請人"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__requester_advice
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__requester_advice
+msgid "Requester Advice"
+msgstr "申請人建議"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_resource_booking
+#: model:ir.module.category,name:resource_booking.category_resource_booking
+#: model:mail.activity.type,name:resource_booking.mail_activity_data_resource_booking
+msgid "Resource Booking"
+msgstr "資源預約"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Resource Booking Name"
+msgstr "資源預約名稱"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_resource_booking_type
+msgid "Resource Booking Type"
+msgstr "資源預約類型"
+
+#. module: resource_booking
+#: model:ir.ui.menu,name:resource_booking.resource_booking_main_menu
+msgid "Resource Bookings"
+msgstr "資源預約"
+
+#. module: resource_booking
+#: model:ir.ui.menu,name:resource_booking.menu_view_resource_calendar_leaves_search
+msgid "Resource Time Off"
+msgstr "資源休假"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_resource_calendar
+msgid "Resource Working Time"
+msgstr "資源工作時間"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_calendar_event__resource_booking_ids
+#: model:ir.model.fields,field_description:resource_booking.field_mail_activity__booking_id
+#: model:ir.model.fields.selection,name:resource_booking.selection__mail_activity_type__category__resource_booking
+msgid "Resource booking"
+msgstr "資源預約"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_res_partner__resource_booking_count
+#: model:ir.model.fields,field_description:resource_booking.field_res_users__resource_booking_count
+msgid "Resource booking count"
+msgstr "資源預約數量"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_resource_booking_type_combination_rel
+msgid "Resource booking type relation with combinations"
+msgstr "資源預約類型與組合的關聯"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__type_rel_ids
+msgid "Resource booking types"
+msgstr "資源預約類型"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_combination__type_rel_ids
+msgid "Resource booking types where this combination is available."
+msgstr "此組合可用的資源預約類型。"
+
+#. module: resource_booking
+#: model:ir.actions.act_window,name:resource_booking.resource_booking_combination_action
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_type_view_form
+msgid "Resource combinations"
+msgstr "資源組合"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__combination_rel_ids
+msgid "Resource combinations available for this type of bookings."
+msgstr "此類型預約可用的資源組合。"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_resource_resource
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_combination__resource_ids
+#: model:ir.ui.menu,name:resource_booking.menu_resource_resource
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_my_bookings
+msgid "Resources"
+msgstr "資源"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__combination_id
+msgid "Resources combination"
+msgstr "資源組合"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_combination__resource_ids
+msgid "Resources that must be free to be booked together."
+msgstr "必須同時空閒才能一起被預約的資源。"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__activity_user_id
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_user_id
+msgid "Responsible User"
+msgstr "責任使用者"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__resource_calendar_id
+msgid "Restrict bookings to this schedule."
+msgstr "將預約限制在此時間表中。"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_breadcrumbs
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Schedule"
+msgstr "排程"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/resource_booking.py:0
+#, python-format
+msgid "Schedule booking"
+msgstr "排程預約"
+
+#. module: resource_booking
+#: model:ir.model.fields.selection,name:resource_booking.selection__resource_booking__state__scheduled
+msgid "Scheduled"
+msgstr "已排程"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
+msgid "Scheduled or confirmed"
+msgstr "已排程或已確認"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/wizard/mail_activity_schedule.py:0
+#, python-format
+msgid ""
+"Scheduling an activity using the booking is not possible on more than one "
+"record."
+msgstr ""
+"無法使用預約在多筆記錄上排程活動。"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__access_token
+msgid "Security Token"
+msgstr "安全性權杖"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__sequence
+msgid "Sequence"
+msgstr "序列號"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Set pending"
+msgstr "設為待處理"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Set to pending"
+msgstr "設為待處理"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_type_view_form
+msgid "Settings"
+msgstr "設定"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Share"
+msgstr "分享"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__slot_duration
+msgid "Slot Duration"
+msgstr "時段長度"
+
+#. module: resource_booking
+#: model:ir.model.fields.selection,name:resource_booking.selection__resource_booking_type__combination_assignment__sorted
+msgid "Sorted: pick the first one that is free"
+msgstr "排序：挑選第一個可用的"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__start
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
+msgid "Start"
+msgstr "開始"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
+msgid "Start date"
+msgstr "開始日期"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "Start:"
+msgstr "開始："
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__state
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_my_bookings
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
+msgid "State"
+msgstr "狀態"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__activity_state
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"基於活動的狀態\n"
+"逾期：截止日期已過\n"
+"今天：活動日期為今天\n"
+"計畫中：未來的活動。"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__stop
+msgid "Stop"
+msgstr "結束"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__categ_ids
+msgid "Tags"
+msgstr "標籤"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__requester_advice
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__requester_advice
+msgid ""
+"Text that will appear by default in portal invitation emails and in calendar"
+" views for scheduling."
+msgstr ""
+"預設出現在入口網站邀請郵件及日曆排程視圖中的文字。"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_my_bookings
+msgid "There are currently no bookings for your account."
+msgstr "您的帳戶目前沒有任何預約。"
+
+#. module: resource_booking
+#: model_terms:ir.actions.act_window,help:resource_booking.resource_booking_type_action
+msgid ""
+"These records categorize resource bookings and apply restrictions to them, "
+"such as available resource combinations, availability schedules and interval"
+" duration."
+msgstr ""
+"這些記錄對資源預約進行分類，並對其施加限制，例如可用的資源組合、可用性時間表及"
+"時間間隔。"
+
+#. module: resource_booking
+#: model_terms:ir.actions.act_window,help:resource_booking.resource_booking_combination_action
+msgid ""
+"These records define resource combinations that can be booked together in "
+"specified schedules and intervals."
+msgstr ""
+"這些記錄定義可在指定時間表和時間間隔內一起預約的資源組合。"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "This booking exceeded its modifications deadline."
+msgstr "此預約已超過其修改截止期限。"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid ""
+"This will remove the associated meeting to unschedule the booking. Are you "
+"sure?"
+msgstr ""
+"這將移除相關的會議以取消預約排程。您確定嗎？"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid ""
+"Try next month\n"
+"                    <i class=\"fa fa-chevron-right\"/>"
+msgstr ""
+"試試下個月\n"
+"                    <i class=\"fa fa-chevron-right\"/>"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__type_id
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type_combination_rel__type_id
+#: model_terms:ir.ui.view,arch_db:resource_booking.portal_my_bookings
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
+msgid "Type"
+msgstr "類型"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__activity_exception_decoration
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "記錄上的異常活動類型。"
+
+#. module: resource_booking
+#: model:ir.actions.act_window,name:resource_booking.resource_booking_type_action
+#: model:ir.ui.menu,name:resource_booking.resource_booking_type_menu
+msgid "Types"
+msgstr "類型"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Unschedule"
+msgstr "取消排程"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Unschedule this booking and archive it."
+msgstr "取消此預約的排程並將其封存。"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
+msgid "Unschedule this booking."
+msgstr "取消此預約的排程。"
+
+#. module: resource_booking
+#: model:res.groups,name:resource_booking.group_user
+msgid "User"
+msgstr "使用者"
+
+#. module: resource_booking
+#: model:res.groups,comment:resource_booking.group_user
+msgid "Users allowed to book resources"
+msgstr "允許預約資源的使用者"
+
+#. module: resource_booking
+#: model:res.groups,comment:resource_booking.group_manager
+msgid "Users allowed to manage resource booking configurations."
+msgstr "允許管理資源預約配置的使用者。"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.message_combination_assigned
+msgid "View"
+msgstr "檢視"
+
+#. module: resource_booking
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking__website_message_ids
+#: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__website_message_ids
+msgid "Website Messages"
+msgstr "網站訊息"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__website_message_ids
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__website_message_ids
+msgid "Website communication history"
+msgstr "網站溝通記錄"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__combination_auto_assign
+msgid ""
+"When checked, resource combinations will be (un)assigned automatically based"
+" on their availability during the booking dates."
+msgstr ""
+"勾選時，將根據預約日期期間的可用性自動分配（或取消分配）資源組合。"
+
+#. module: resource_booking
+#: model_terms:ir.actions.act_window,help:resource_booking.resource_booking_action
+msgid ""
+"When scheduled, resources will be blocked. When pending, it means the "
+"requester didn't place the booking yet."
+msgstr ""
+"排程後，資源將被鎖定。待處理時，表示申請人尚未完成預約。"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking_type__modifications_deadline
+msgid ""
+"When this deadline has been exceeded, if a booking was not yet confirmed, it"
+" will be canceled automatically. Also, only booking managers will be able to"
+" unschedule or reschedule them. The value is expressed in hours."
+msgstr ""
+"超過此截止期限後，如果預約尚未確認，將自動取消。此外，僅預約管理員能夠取消排程"
+"或重新排程。該值以小時為單位。"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__user_id
+msgid ""
+"Who organized this booking? Usually whoever created the record. It will "
+"appear as the calendar event organizer, when scheduled, and calendar "
+"notifications will be sent in his/her name."
+msgstr ""
+"誰組織了此預約？通常是建立記錄的人。排程後，此人將顯示為日曆事件的舉辦方，日曆"
+"通知也將以其名義發送。"
+
+#. module: resource_booking
+#: model:ir.model.fields,help:resource_booking.field_resource_booking__partner_ids
+msgid "Who will attend this booking?"
+msgstr "誰將參加此預約？"
+
+#. module: resource_booking
+#: model:ir.ui.menu,name:resource_booking.menu_resource_calendar
+msgid "Working Schedules"
+msgstr "工作時間表"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
+msgid "You are about to confirm this booking:"
+msgstr "您即將確認此預約："
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/models/calendar_event.py:0
+#, python-format
+msgid ""
+"You are not allowed to alter these bookings because they exceeded their modification deadlines:\n"
+"\n"
+"- %s"
+msgstr ""
+"您不被允許修改以下預約，因為已超過修改截止期限：\n"
+"\n"
+"- %s"
+
+#. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.message_combination_assigned
+msgid "because you belong to the chosen resource combination:"
+msgstr "因為您屬於所選的資源組合："

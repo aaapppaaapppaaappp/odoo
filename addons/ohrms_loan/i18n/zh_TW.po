@@ -1,0 +1,610 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ohrms_loan
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-20 10:07+0000\n"
+"PO-Revision-Date: 2025-09-20 10:07+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__message_needaction
+msgid "Action Needed"
+msgstr "需要處理"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__activity_ids
+msgid "Activities"
+msgstr "活動"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "活動例外裝飾"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__activity_state
+msgid "Activity State"
+msgstr "活動狀態"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "活動類型圖示"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan_line__amount
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan_line__amount
+msgid "Amount"
+msgstr "金額"
+
+#. module: ohrms_loan
+#: model_terms:ir.ui.view,arch_db:ohrms_loan.hr_loan_view_form
+msgid "Approve"
+msgstr "核準"
+
+#. module: ohrms_loan
+#: model:ir.model.fields.selection,name:ohrms_loan.selection__hr_loan__state__approve
+msgid "Approved"
+msgstr "已核準"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__message_attachment_count
+msgid "Attachment Count"
+msgstr "附件數量"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__balance_amount
+msgid "Balance Amount"
+msgstr "餘額"
+
+#. module: ohrms_loan
+#: model_terms:ir.ui.view,arch_db:ohrms_loan.hr_loan_view_form
+msgid "Cancel"
+msgstr "取消"
+
+#. module: ohrms_loan
+#: model:ir.model.fields.selection,name:ohrms_loan.selection__hr_loan__state__cancel
+msgid "Canceled"
+msgstr "已取消"
+
+#. module: ohrms_loan
+#: model_terms:ir.actions.act_window,help:ohrms_loan.hr_loan_action
+msgid "Click to create a new Loan request."
+msgstr "點擊以建立新的貸款申請。"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__company_id
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__company_id
+msgid "Company"
+msgstr "公司"
+
+#. module: ohrms_loan
+#: model_terms:ir.ui.view,arch_db:ohrms_loan.hr_loan_view_form
+msgid "Compute Installment"
+msgstr "計算分期付款"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__create_uid
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan_line__create_uid
+msgid "Created by"
+msgstr "建立者"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__create_date
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan_line__create_date
+msgid "Created on"
+msgstr "建立於"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__currency_id
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__currency_id
+msgid "Currency"
+msgstr "幣別"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__date
+msgid "Date"
+msgstr "日期"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_payslip_input__date_to
+msgid "Date To"
+msgstr "結束日期"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_payslip_input__date_from
+msgid "Date from"
+msgstr "開始日期"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__date
+msgid "Date of the loan request"
+msgstr "貸款申請日期"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__payment_date
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan_line__date
+msgid "Date of the payment"
+msgstr "付款日期"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__department_id
+#: model_terms:ir.ui.view,arch_db:ohrms_loan.hr_loan_view_search
+msgid "Department"
+msgstr "部門"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__loan_lines
+msgid "Details of installment lines associated with the loan."
+msgstr "與貸款相關的分期付款明細。"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__display_name
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan_line__display_name
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_payslip__display_name
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_payslip_input__display_name
+msgid "Display Name"
+msgstr "顯示名稱"
+
+#. module: ohrms_loan
+#: model:ir.model.fields.selection,name:ohrms_loan.selection__hr_loan__state__draft
+msgid "Draft"
+msgstr "草稿"
+
+#. module: ohrms_loan
+#: model:ir.model,name:ohrms_loan.model_hr_employee
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__employee_id
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan_line__employee_id
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan_line__employee_id
+#: model_terms:ir.ui.view,arch_db:ohrms_loan.hr_loan_view_search
+msgid "Employee"
+msgstr "員工"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__employee_id
+msgid "Employee Name"
+msgstr "員工姓名"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_payslip_input__date_to
+msgid "End date for the payslip input."
+msgstr "薪資輸入的結束日期。"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__message_follower_ids
+msgid "Followers"
+msgstr "關注者"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "關注者（合作夥伴）"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Font awesome 圖示，例如 fa-tasks"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__has_message
+msgid "Has Message"
+msgstr "有訊息"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_employee__id
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__id
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan_line__id
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_payslip__id
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_payslip_input__id
+msgid "ID"
+msgstr "ID"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__activity_exception_icon
+msgid "Icon"
+msgstr "圖示"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "用於表示例外活動的圖示。"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "若勾選，表示有新訊息需要您注意。"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__message_has_error
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "若勾選，表示部分訊息有傳遞錯誤。"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan_line__paid
+msgid "Indicates whether the installment has been paid."
+msgstr "表示該期分期付款是否已支付。"
+
+#. module: ohrms_loan
+#: model:ir.model,name:ohrms_loan.model_hr_loan_line
+msgid "Installment Line"
+msgstr "分期付款明細"
+
+#. module: ohrms_loan
+#: model_terms:ir.ui.view,arch_db:ohrms_loan.hr_loan_view_form
+msgid "Installments"
+msgstr "分期付款"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__message_is_follower
+msgid "Is Follower"
+msgstr "是關注者"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__job_position_id
+msgid "Job Position"
+msgstr "職位"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__job_position_id
+msgid "Job position of the employee"
+msgstr "員工的職位"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__write_uid
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan_line__write_uid
+msgid "Last Updated by"
+msgstr "最後更新者"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__write_date
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan_line__write_date
+msgid "Last Updated on"
+msgstr "最後更新於"
+
+#. module: ohrms_loan
+#: model:hr.salary.rule,name:ohrms_loan.hr_rule_loan
+#: model:ir.ui.menu,name:ohrms_loan.hr_loan_menu
+#: model_terms:ir.ui.view,arch_db:ohrms_loan.hr_loan_view_search
+msgid "Loan"
+msgstr "貸款"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__loan_amount
+msgid "Loan Amount"
+msgstr "貸款金額"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_employee__loan_count
+msgid "Loan Count"
+msgstr "貸款數量"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_payslip_input__loan_line_id
+msgid "Loan Installment"
+msgstr "貸款分期"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__loan_lines
+msgid "Loan Line"
+msgstr "貸款明細"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__name
+msgid "Loan Name"
+msgstr "貸款名稱"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan_line__loan_id
+msgid "Loan Ref."
+msgstr "貸款參考"
+
+#. module: ohrms_loan
+#: model:ir.model,name:ohrms_loan.model_hr_loan
+#: model_terms:ir.ui.view,arch_db:ohrms_loan.hr_loan_view_form
+msgid "Loan Request"
+msgstr "貸款申請"
+
+#. module: ohrms_loan
+#: model_terms:ir.ui.view,arch_db:ohrms_loan.hr_loan_view_tree
+msgid "Loan Requests"
+msgstr "貸款申請"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__loan_amount
+msgid "Loan amount"
+msgstr "貸款金額"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_payslip_input__loan_line_id
+msgid "Loan installment associated with this payslip input."
+msgstr "與此薪資輸入相關的貸款分期。"
+
+#. module: ohrms_loan
+#: model:ir.actions.act_window,name:ohrms_loan.act_hr_employee_loan_request
+#: model_terms:ir.ui.view,arch_db:ohrms_loan.view_employee_form
+msgid "Loans"
+msgstr "貸款"
+
+#. module: ohrms_loan
+#: model:ir.ui.menu,name:ohrms_loan.hr_loan_menu_root
+msgid "Loans & Advances"
+msgstr "貸款與預支"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__message_has_error
+msgid "Message Delivery error"
+msgstr "訊息傳遞錯誤"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__message_ids
+msgid "Messages"
+msgstr "訊息"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "我的活動截止日"
+
+#. module: ohrms_loan
+#: model_terms:ir.ui.view,arch_db:ohrms_loan.hr_loan_view_search
+msgid "My Requests"
+msgstr "我的申請"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__name
+msgid "Name of the loan"
+msgstr "貸款名稱"
+
+#. module: ohrms_loan
+#. odoo-python
+#: code:addons/ohrms_loan/models/hr_loan.py:0
+msgid "New"
+msgstr "新建"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "下一個活動日曆事件"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "下一個活動截止日"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__activity_summary
+msgid "Next Activity Summary"
+msgstr "下一個活動摘要"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__activity_type_id
+msgid "Next Activity Type"
+msgstr "下一個活動類型"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__installment
+msgid "No Of Installments"
+msgstr "分期期數"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__message_needaction_counter
+msgid "Number of Actions"
+msgstr "操作數量"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__message_has_error_counter
+msgid "Number of errors"
+msgstr "錯誤數量"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__installment
+msgid "Number of installments"
+msgstr "分期期數"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_employee__loan_count
+msgid "Number of loans associated with the employee"
+msgstr "與員工相關的貸款數量"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "需要處理的訊息數量"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "傳遞錯誤的訊息數量"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan_line__paid
+msgid "Paid"
+msgstr "已付"
+
+#. module: ohrms_loan
+#: model:ir.model,name:ohrms_loan.model_hr_payslip
+msgid "Pay Slip"
+msgstr "薪資單"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan_line__date
+msgid "Payment Date"
+msgstr "付款日期"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__payment_date
+msgid "Payment Start Date"
+msgstr "付款開始日期"
+
+#. module: ohrms_loan
+#: model:ir.model,name:ohrms_loan.model_hr_payslip_input
+msgid "Payslip Input"
+msgstr "薪資輸入"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan_line__payslip_id
+msgid "Payslip Ref."
+msgstr "薪資單參考"
+
+#. module: ohrms_loan
+#. odoo-python
+#: code:addons/ohrms_loan/models/hr_loan.py:0
+msgid "Please Compute installment"
+msgstr "請計算分期付款"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__rating_ids
+msgid "Ratings"
+msgstr "評分"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan_line__loan_id
+msgid "Reference to the associated loan."
+msgstr "關聯貸款的參考。"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan_line__payslip_id
+msgid "Reference to the associated payslip, if any."
+msgstr "關聯薪資單的參考（如有）。"
+
+#. module: ohrms_loan
+#: model_terms:ir.ui.view,arch_db:ohrms_loan.hr_loan_view_form
+msgid "Refuse"
+msgstr "拒絕"
+
+#. module: ohrms_loan
+#: model:ir.model.fields.selection,name:ohrms_loan.selection__hr_loan__state__refuse
+msgid "Refused"
+msgstr "已拒絕"
+
+#. module: ohrms_loan
+#: model:ir.actions.act_window,name:ohrms_loan.hr_loan_action
+#: model:ir.ui.menu,name:ohrms_loan.hr_loan_menu_requests
+msgid "Request for Loan"
+msgstr "貸款申請"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__activity_user_id
+msgid "Responsible User"
+msgstr "負責使用者"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "簡訊傳遞錯誤"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_payslip_input__date_from
+msgid "Start date for the payslip input."
+msgstr "薪資輸入的開始日期。"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__state
+msgid "State"
+msgstr "狀態"
+
+#. module: ohrms_loan
+#: model_terms:ir.ui.view,arch_db:ohrms_loan.hr_loan_view_search
+msgid "Status"
+msgstr "狀態"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "基於活動的狀態\n逾期：截止日期已過\n今天：活動日期是今天\n已規劃：未來活動。"
+
+#. module: ohrms_loan
+#: model_terms:ir.ui.view,arch_db:ohrms_loan.hr_loan_view_form
+msgid "Submit"
+msgstr "提交"
+
+#. module: ohrms_loan
+#: model:ir.model.fields.selection,name:ohrms_loan.selection__hr_loan__state__waiting_approval_1
+msgid "Submitted"
+msgstr "已提交"
+
+#. module: ohrms_loan
+#. odoo-python
+#: code:addons/ohrms_loan/models/hr_loan.py:0
+msgid "The Employee already has a pending installment"
+msgstr "該員工已有未完成的分期付款"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__state
+msgid "The current state of the loan request."
+msgstr "貸款申請的目前狀態。"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__department_id
+msgid "The department to which the employee belongs."
+msgstr "員工所屬的部門。"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__balance_amount
+msgid ""
+"The remaining balance amount of the \n"
+"                                  loan after deducting \n"
+"                                  the total paid amount."
+msgstr "貸款扣除已付總額後的剩餘餘額。"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__total_amount
+msgid "The total amount of the loan"
+msgstr "貸款總金額"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__total_paid_amount
+msgid "The total amount that has been paid towards the loan."
+msgstr "已付的貸款總金額。"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__total_amount
+msgid "Total Amount"
+msgstr "總金額"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__total_paid_amount
+msgid "Total Paid Amount"
+msgstr "已付總金額"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "記錄上的例外活動類型。"
+
+#. module: ohrms_loan
+#: model_terms:ir.actions.act_window,help:ohrms_loan.hr_loan_action
+msgid "Use this menu to create loan requests."
+msgstr "使用此選單建立貸款申請。"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,field_description:ohrms_loan.field_hr_loan__website_message_ids
+msgid "Website Messages"
+msgstr "網站訊息"
+
+#. module: ohrms_loan
+#: model:ir.model.fields,help:ohrms_loan.field_hr_loan__website_message_ids
+msgid "Website communication history"
+msgstr "網站通訊記錄"
+
+#. module: ohrms_loan
+#. odoo-python
+#: code:addons/ohrms_loan/models/hr_loan.py:0
+msgid "You cannot delete a loan which is not in draft or cancelled state"
+msgstr "您不能刪除非草稿或已取消狀態的貸款"

@@ -1,0 +1,181 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ohrms_loan_accounting
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-20 10:35+0000\n"
+"PO-Revision-Date: 2025-09-20 10:35+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields,field_description:ohrms_loan_accounting.field_res_config_settings__loan_approve
+msgid "Approval from Accounting Department"
+msgstr "會計部門核准"
+
+#. module: ohrms_loan_accounting
+#: model_terms:ir.ui.view,arch_db:ohrms_loan_accounting.hr_loan_view_form
+msgid "Approve"
+msgstr "核准"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields.selection,name:ohrms_loan_accounting.selection__hr_loan__state__approve
+msgid "Approved"
+msgstr "已核准"
+
+#. module: ohrms_loan_accounting
+#: model_terms:ir.ui.view,arch_db:ohrms_loan_accounting.hr_loan_view_form
+msgid "Cancel"
+msgstr "取消"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields.selection,name:ohrms_loan_accounting.selection__hr_loan__state__cancel
+msgid "Canceled"
+msgstr "已取消"
+
+#. module: ohrms_loan_accounting
+#: model_terms:ir.ui.view,arch_db:ohrms_loan_accounting.hr_loan_view_form
+msgid "Compute Installment"
+msgstr "計算分期付款"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model,name:ohrms_loan_accounting.model_res_config_settings
+msgid "Config Settings"
+msgstr "配置設定"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields,field_description:ohrms_loan_accounting.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:ohrms_loan_accounting.field_hr_loan__display_name
+#: model:ir.model.fields,field_description:ohrms_loan_accounting.field_hr_loan_line__display_name
+#: model:ir.model.fields,field_description:ohrms_loan_accounting.field_hr_payslip__display_name
+#: model:ir.model.fields,field_description:ohrms_loan_accounting.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "顯示名稱"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields.selection,name:ohrms_loan_accounting.selection__hr_loan__state__draft
+msgid "Draft"
+msgstr "草稿"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields,help:ohrms_loan_accounting.field_hr_loan__employee_account_id
+msgid "Employee account"
+msgstr "員工帳戶"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields,field_description:ohrms_loan_accounting.field_account_move_line__id
+#: model:ir.model.fields,field_description:ohrms_loan_accounting.field_hr_loan__id
+#: model:ir.model.fields,field_description:ohrms_loan_accounting.field_hr_loan_line__id
+#: model:ir.model.fields,field_description:ohrms_loan_accounting.field_hr_payslip__id
+#: model:ir.model.fields,field_description:ohrms_loan_accounting.field_res_config_settings__id
+msgid "ID"
+msgstr "ID"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model,name:ohrms_loan_accounting.model_hr_loan_line
+msgid "Installment Line"
+msgstr "分期付款明細"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields,field_description:ohrms_loan_accounting.field_hr_loan__journal_id
+msgid "Journal"
+msgstr "日記帳"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model,name:ohrms_loan_accounting.model_account_move_line
+msgid "Journal Item"
+msgstr "日記帳項目"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields,help:ohrms_loan_accounting.field_hr_loan__journal_id
+msgid "Journal for the loan"
+msgstr "貸款日記帳"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields,field_description:ohrms_loan_accounting.field_hr_loan__employee_account_id
+msgid "Loan Account"
+msgstr "貸款帳戶"
+
+#. module: ohrms_loan_accounting
+#: model_terms:ir.ui.view,arch_db:ohrms_loan_accounting.res_config_settings_view_form
+msgid "Loan Approval"
+msgstr "貸款核准"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields,help:ohrms_loan_accounting.field_res_config_settings__loan_approve
+#: model_terms:ir.ui.view,arch_db:ohrms_loan_accounting.res_config_settings_view_form
+msgid "Loan Approval from account manager"
+msgstr "帳戶經理的貸款核准"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields,field_description:ohrms_loan_accounting.field_account_move_line__loan_id
+msgid "Loan Id"
+msgstr "貸款 ID"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model,name:ohrms_loan_accounting.model_hr_loan
+msgid "Loan Request"
+msgstr "貸款申請"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields,help:ohrms_loan_accounting.field_account_move_line__loan_id
+msgid "Loan id on invoice line"
+msgstr "發票明細上的貸款 ID"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model,name:ohrms_loan_accounting.model_hr_payslip
+msgid "Pay Slip"
+msgstr "薪資單"
+
+#. module: ohrms_loan_accounting
+#: model_terms:ir.ui.view,arch_db:ohrms_loan_accounting.hr_loan_view_form
+msgid "Refuse"
+msgstr "拒絕"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields.selection,name:ohrms_loan_accounting.selection__hr_loan__state__refuse
+msgid "Refused"
+msgstr "已拒絕"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields,field_description:ohrms_loan_accounting.field_hr_loan__state
+msgid "State"
+msgstr "狀態"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields,help:ohrms_loan_accounting.field_hr_loan__state
+msgid "State of the loan request"
+msgstr "貸款申請狀態"
+
+#. module: ohrms_loan_accounting
+#: model_terms:ir.ui.view,arch_db:ohrms_loan_accounting.hr_loan_view_form
+msgid "Submit"
+msgstr "提交"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields.selection,name:ohrms_loan_accounting.selection__hr_loan__state__waiting_approval_1
+msgid "Submitted"
+msgstr "已提交"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields,field_description:ohrms_loan_accounting.field_hr_loan__treasury_account_id
+msgid "Treasury Account"
+msgstr "財務帳戶"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields,help:ohrms_loan_accounting.field_hr_loan__treasury_account_id
+msgid "Treasury account for the loan"
+msgstr "貸款的財務帳戶"
+
+#. module: ohrms_loan_accounting
+#: model:ir.model.fields.selection,name:ohrms_loan_accounting.selection__hr_loan__state__waiting_approval_2
+msgid "Waiting Approval"
+msgstr "等待核准"

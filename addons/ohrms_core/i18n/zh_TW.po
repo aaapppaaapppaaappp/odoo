@@ -1,0 +1,310 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ohrms_core
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-27 11:03+0000\n"
+"PO-Revision-Date: 2022-06-27 11:03+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_leave_configuration_inherited
+msgid "Advanced Features"
+msgstr "進階功能"
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
+msgid "Biometric Device Integration"
+msgstr "生物辨識裝置整合"
+
+#. module: ohrms_core
+#: model:ir.model,name:ohrms_core.model_res_config_settings
+msgid "Config Settings"
+msgstr "配置設定"
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
+msgid "Custody Management"
+msgstr "資產保管管理"
+
+#. module: ohrms_core
+#. openerp-web
+#: code:addons/ohrms_core/static/src/xml/link_view.xml:0
+#, python-format
+msgid "Documentation"
+msgstr "文件"
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
+msgid "Employee Checklist"
+msgstr "員工清單"
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
+msgid "Employee Insurance"
+msgstr "員工保險"
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_leave_configuration_inherited
+msgid "Employee Shift"
+msgstr "員工班次"
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
+msgid ""
+"Get\n"
+"This App"
+msgstr ""
+"取得\n"
+"此應用程式"
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_leave_configuration_inherited
+msgid "Get This App"
+msgstr "取得此應用程式"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__module_hr_resignation
+msgid "Handle the resignation process of the employee"
+msgstr "處理員工的離職流程"
+
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__module_oh_hr_zk_attendance
+msgid ""
+"Helps you to manage Biometric Device Integration.\n"
+"- This installs the module Biometric Device Integration."
+msgstr ""
+"協助您管理生物辨識裝置整合。\n"
+"- 此操作會安裝生物辨識裝置整合模組。"
+
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__module_hr_custody
+msgid ""
+"Helps you to manage Custody Requests.\n"
+"- This installs the module Custody Management."
+msgstr ""
+"協助您管理資產保管申請。\n"
+"- 此操作會安裝資產保管管理模組。"
+
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__module_oh_employee_check_list
+msgid ""
+"Helps you to manage Employee Checklist.\n"
+"- This installs the module Employee Checklist."
+msgstr ""
+"協助您管理員工清單。\n"
+"- 此操作會安裝員工清單模組。"
+
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__module_hr_insurance
+msgid ""
+"Helps you to manage Employee Insurance.\n"
+"- This installs the module Employee Insurance."
+msgstr ""
+"協助您管理員工保險。\n"
+"- 此操作會安裝員工保險模組。"
+
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__module_hr_employee_shift
+msgid ""
+"Helps you to manage Employee Shift.\n"
+"- This installs the module Employee Shift."
+msgstr ""
+"協助您管理員工班次。\n"
+"- 此操作會安裝員工班次模組。"
+
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__module_oh_hr_lawsuit_management
+msgid ""
+"Helps you to manage Lawsuit Management.\n"
+"- This installs the module Lawsuit Management."
+msgstr ""
+"協助您管理訴訟管理。\n"
+"- 此操作會安裝訴訟管理模組。"
+
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__module_hr_resignation
+msgid ""
+"Helps you to manage Resignation Process.\n"
+"- This installs the module Resignation Process."
+msgstr ""
+"協助您管理離職流程。\n"
+"- 此操作會安裝離職流程模組。"
+
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__module_hr_vacation_mngmt
+msgid ""
+"Helps you to manage Vacation Management.\n"
+"- This installs the module Vacation Management."
+msgstr ""
+"協助您管理休假管理。\n"
+"- 此操作會安裝休假管理模組。"
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
+msgid "Lawsuit Management"
+msgstr "訴訟管理"
+
+#. module: ohrms_core
+#. openerp-web
+#: code:addons/ohrms_core/static/src/xml/link_view.xml:0
+#, python-format
+msgid "Log out"
+msgstr "登出"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__module_hr_insurance
+msgid "Manage Insurance for employees"
+msgstr "管理員工保險"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__module_oh_hr_zk_attendance
+msgid ""
+"Manage biometric device (Model: ZKteco uFace 202) integration with HR "
+"attendance (Face + Thumb)"
+msgstr ""
+"管理生物辨識裝置（型號：ZKteco uFace 202）與人力資源出勤的整合（臉部 + 指紋）"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__module_hr_employee_shift
+msgid "Manage different type of shifts"
+msgstr "管理不同類型的班次"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__module_hr_vacation_mngmt
+msgid "Manage employee vacation"
+msgstr "管理員工休假"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__module_oh_hr_lawsuit_management
+msgid "Manage legal actions"
+msgstr "管理法律行動"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__module_hr_custody
+msgid "Manage the company properties when it is in the custody of an employee"
+msgstr "管理由員工保管的公司資產"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__module_oh_employee_check_list
+msgid "Manages employee's entry & exit Process"
+msgstr "管理員工的入職與離職流程"
+
+#. module: ohrms_core
+#: model:ir.model,name:ohrms_core.model_ir_ui_menu
+msgid "Menu"
+msgstr "選單"
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_sorted_menus
+msgid "Menu Management"
+msgstr "選單管理"
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_sorted_menus
+msgid "Menu With Alphabetic Order"
+msgstr "依字母順序排列選單"
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_leave_configuration_inherited
+msgid "Module is not Present in Your Repository."
+msgstr "模組不在您的儲存庫中。"
+
+#. module: ohrms_core
+#. openerp-web
+#: code:addons/ohrms_core/static/src/xml/link_view.xml:0
+#, python-format
+msgid "My Odoo.com account"
+msgstr "我的 Odoo.com 帳號"
+
+#. module: ohrms_core
+#. openerp-web
+#: code:addons/ohrms_core/static/src/js/data.js:0
+#: code:addons/ohrms_core/static/src/xml/link_view.xml:0
+#, python-format
+msgid "Open HRMS"
+msgstr "Open HRMS"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ir_ui_menu__order_changed
+msgid "Order Changed"
+msgstr "順序已變更"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__order_menu
+msgid "Order Menu Alphabets"
+msgstr "依字母排序選單"
+
+#. module: ohrms_core
+#. openerp-web
+#: code:addons/ohrms_core/static/src/xml/link_view.xml:0
+#, python-format
+msgid "Preferences"
+msgstr "偏好設定"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ir_ui_menu__recent_menu_sequence
+msgid "Recent Menu Sequence"
+msgstr "最近選單順序"
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
+msgid "Resignation Process"
+msgstr "離職流程"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__test_module_hr_custody
+msgid "Test Module Hr Custody"
+msgstr "測試模組 HR 資產保管"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__test_module_hr_employee_shift
+msgid "Test Module Hr Employee Shift"
+msgstr "測試模組 HR 員工班次"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__test_module_hr_insurance
+msgid "Test Module Hr Insurance"
+msgstr "測試模組 HR 保險"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__test_module_hr_resignation
+msgid "Test Module Hr Resignation"
+msgstr "測試模組 HR 離職"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__test_module_hr_vacation_mngmt
+msgid "Test Module Hr Vacation Mngmt"
+msgstr "測試模組 HR 休假管理"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__test_module_oh_hr_lawsuit_management
+msgid "Test Module Oh Hr Lawsuit Management"
+msgstr "測試模組 OH HR 訴訟管理"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__test_module_oh_hr_zk_attendance
+msgid "Test Module Oh Hr Zk Attendance"
+msgstr "測試模組 OH HR ZK 出勤"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__test_oh_employee_check_list
+msgid "Test Oh Employee Check List"
+msgstr "測試 OH 員工清單"
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_leave_configuration_inherited
+msgid "Vacation Management"
+msgstr "休假管理"

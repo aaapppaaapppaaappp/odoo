@@ -43,6 +43,12 @@ package-lock.json
 package.json
 .husky
 
+# local environment secrets
+env.odoo.prod
+env.odoo-proxy.prod
+.env
+.env.*
+
 # various virtualenv
 /bin/
 /build/

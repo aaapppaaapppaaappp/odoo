@@ -1160,7 +1160,7 @@ msgid ""
 "Automatically send an email to customers when a task reaches a specific "
 "stage in a project by setting this template on that stage"
 msgstr ""
-"在該階段設定此範本，當任務到達專案的特定階段時，會自動向客戶發送電子郵件"
+"在該階段設定此範本，當任務到達專案的特定階段時，會自動向客戶傳送電子郵件"
 
 #. module: project
 #. odoo-python
@@ -4349,7 +4349,7 @@ msgstr "設定狀態為⋯"
 msgid ""
 "Set this template on a project stage to request feedback from your "
 "customers. Enable the \"customer ratings\" feature on the project"
-msgstr "在專案階段上設置此範本，以請求客戶的回應。在專案啟用「客戶評分」功能"
+msgstr "在專案階段上設定此範本，以請求客戶的回應。在專案啟用「客戶評分」功能"
 
 #. module: project
 #: model:ir.actions.act_window,name:project.project_config_settings_action

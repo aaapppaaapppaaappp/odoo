@@ -2987,7 +2987,7 @@ msgstr "若產品價格等於 0，隱藏「加入購物車」並以「聯絡我�
 msgid ""
 "If the setting is set, sent to authenticated visitors who abandoned their "
 "cart"
-msgstr "若設置此設定，則發送給已通過身份驗證的遺棄購物車訪客"
+msgstr "若設定此設定，則傳送給已透過身份驗證的遺棄購物車訪客"
 
 #. module: website_sale
 #: model:ir.model.fields,help:website_sale.field_product_pricelist__website_id

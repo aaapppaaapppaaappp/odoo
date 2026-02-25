@@ -8634,7 +8634,7 @@ msgstr "Sendcloud 連接器"
 #: model:mail.template,description:stock.mail_template_data_delivery_confirmation
 msgid ""
 "Sent to the customers when orders are delivered, if the setting is enabled"
-msgstr "如果啟用該設定，則在交付訂單時發送給客戶"
+msgstr "如果啟用該設定，則在交付訂單時傳送給客戶"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__barcode_separator
@@ -8836,7 +8836,7 @@ msgstr ""
 #. module: stock
 #: model:mail.template,name:stock.mail_template_data_delivery_confirmation
 msgid "Shipping: Send by Email"
-msgstr "運輸: 通過電子郵件發送"
+msgstr "運輸: 透過電子郵件傳送"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_delivery_shiprocket

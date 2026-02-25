@@ -2086,7 +2086,7 @@ msgstr "發送"
 #. module: lunch
 #: model:mail.template,description:lunch.lunch_order_mail_supplier
 msgid "Sent to vendor with the order of the day"
-msgstr "向供應商發送當天的訂單"
+msgstr "向供應商傳送當天的訂單"
 
 #. module: lunch
 #: model:ir.actions.act_window,name:lunch.lunch_config_settings_action

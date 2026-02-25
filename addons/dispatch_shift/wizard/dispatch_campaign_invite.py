@@ -75,6 +75,7 @@ class DispatchCampaignInvite(models.TransientModel):
                     template.with_context(
                         campaign_id=campaign.id,
                         campaign_name=campaign.name,
+                        lang=employee._dispatch_get_mail_lang(),
                     ).send_mail(employee.id, force_send=True)
 
         count = len(self.employee_ids)

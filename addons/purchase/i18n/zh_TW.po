@@ -2937,18 +2937,18 @@ msgstr "發送"
 #. module: purchase
 #: model:mail.template,description:purchase.email_template_edi_purchase
 msgid "Sent manually to vendor to request a quotation"
-msgstr "手動發送給供應商以請求報價"
+msgstr "手動傳送給供應商以請求報價"
 
 #. module: purchase
 #: model:mail.template,description:purchase.email_template_edi_purchase_done
 msgid "Sent to vendor with the purchase order in attachment"
-msgstr "與附件中的採購訂單一起發送給供應商"
+msgstr "與附件中的採購訂單一起傳送給供應商"
 
 #. module: purchase
 #: model:mail.template,description:purchase.email_template_edi_purchase_reminder
 msgid ""
 "Sent to vendors before expected arrival, based on the purchase order setting"
-msgstr "根據採購訂單設定，在預期送貨來之前發送給供應商"
+msgstr "根據採購訂單設定，在預期送貨來之前傳送給供應商"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line__sequence

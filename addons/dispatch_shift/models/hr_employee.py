@@ -22,12 +22,6 @@ class HrEmployee(models.Model):
         for rec in self:
             rec.access_url = '/dispatch/my'
 
-    def action_send_dispatch_link(self):
-        self.ensure_one()
-        self._portal_ensure_token()
-        template = self.env.ref('dispatch_shift.mail_template_dispatch_employee_link')
-        template.send_mail(self.id, force_send=True)
-
     def action_view_dispatch_applications(self):
         self.ensure_one()
         return {
@@ -41,3 +35,13 @@ class HrEmployee(models.Model):
     def _get_portal_url(self):
         self.ensure_one()
         return '/dispatch/my?access_token=%s' % self._portal_ensure_token()
+
+    def _dispatch_get_mail_lang(self):
+        self.ensure_one()
+        return self.user_id.lang or self.work_contact_id.lang or self.lang or self.env.lang or 'en_US'
+
+    def action_send_dispatch_link(self):
+        self.ensure_one()
+        self._portal_ensure_token()
+        template = self.env.ref('dispatch_shift.mail_template_dispatch_employee_link')
+        template.with_context(lang=self._dispatch_get_mail_lang()).send_mail(self.id, force_send=True)

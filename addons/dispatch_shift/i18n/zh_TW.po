@@ -907,7 +907,7 @@ msgstr "啟用後，只有被邀請的員工才能在入口網站中看到此活
 #. module: dispatch_shift
 #: model_terms:mail.template,body_html:dispatch_shift.mail_template_dispatch_employee_link
 msgid "You can access your Dispatch Shift portal using the link below. Use this link to browse available shifts and apply for the ones you want."
-msgstr "您可以使用以下連結存取您的派遣班次入口網站。使用此連結瀏覽可用班次並申請您想要的班次。"
+msgstr "您可使用下方連結存取您的 Dispatch Shift 入口網站。請使用此連結瀏覽可用班次，並申請您想要的班次。"
 
 #. module: dispatch_shift
 #. odoo-python
@@ -938,7 +938,7 @@ msgstr "您已被邀請參加"
 #. module: dispatch_shift
 #: model:mail.template,subject:dispatch_shift.mail_template_dispatch_employee_link
 msgid "Your Dispatch Shift Portal Link"
-msgstr "您的派遣班次入口網站連結"
+msgstr "您的 Dispatch Shift 入口網站連結"
 
 #. module: dispatch_shift
 #: model:mail.template,subject:dispatch_shift.mail_template_dispatch_campaign_invite

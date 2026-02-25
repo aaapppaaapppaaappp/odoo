@@ -74,7 +74,7 @@ msgstr ""
 "    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
 "        親愛的 <t t-out=\"object.partner_id.name or '參加者' or ''\">參加者</"
 "t><br/><br/>\n"
-"        抱歉你未能通過認證，你現時不再是以下課程的成員： <t t-"
+"        抱歉你未能透過認證，你現時不再是以下課程的成員： <t t-"
 "out=\"object.slide_partner_id.channel_id.name or ''\">園藝基礎</t>。<br/><br/"
 ">\n"
 "        歡迎你再次報名參加！\n"
@@ -549,7 +549,7 @@ msgstr "請從清單中選擇現有的認證。可以在後台軟件完成建立
 #. module: website_slides_survey
 #: model:mail.template,description:website_slides_survey.mail_template_user_input_certification_failed
 msgid "Sent to participant if they failed the certification"
-msgstr "發送給未能通過認證參加者"
+msgstr "傳送給未能透過認證參加者"
 
 #. module: website_slides_survey
 #: model:survey.question.answer,value:website_slides_survey.furniture_certification_page_1_question_2_choice_4
@@ -705,7 +705,7 @@ msgstr ""
 #: model:mail.template,subject:website_slides_survey.mail_template_user_input_certification_failed
 msgid ""
 "You have failed the course: {{ object.slide_partner_id.channel_id.name }}"
-msgstr "你未能通過課程：{{ object.slide_partner_id.channel_id.name }}"
+msgstr "你未能透過課程：{{ object.slide_partner_id.channel_id.name }}"
 
 #. module: website_slides_survey
 #: model_terms:ir.ui.view,arch_db:website_slides_survey.user_profile_content

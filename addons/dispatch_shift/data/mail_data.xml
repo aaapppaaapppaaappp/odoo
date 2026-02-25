@@ -7,6 +7,7 @@
             <field name="subject">Your Dispatch Shift Portal Link</field>
             <field name="email_from">{{ user.email }}</field>
             <field name="email_to">{{ object.work_email }}</field>
+            <field name="lang">{{ object.user_id.lang or object.work_contact_id.lang or object.lang or 'en_US' }}</field>
             <field name="body_html" type="html">
                 <div style="margin: 0px; padding: 0px;">
                     <p>Hello <t t-out="object.name"/>,</p>
@@ -33,6 +34,7 @@
             <field name="subject">You're invited to {{ ctx.get('campaign_name', 'a campaign') }}</field>
             <field name="email_from">{{ user.email }}</field>
             <field name="email_to">{{ object.work_email }}</field>
+            <field name="lang">{{ object.user_id.lang or object.work_contact_id.lang or object.lang or 'en_US' }}</field>
             <field name="body_html" type="html">
                 <div style="margin: 0px; padding: 0px;">
                     <p>Hello <t t-out="object.name"/>,</p>

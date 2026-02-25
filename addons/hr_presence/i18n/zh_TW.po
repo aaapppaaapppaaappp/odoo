@@ -220,7 +220,7 @@ msgstr "傳送電話短訊"
 msgid ""
 "Sent manually in presence module when an employee wasn't working despite not "
 "being off"
-msgstr "當員工不工作時，儘管沒有休假，在出勤模組中手動發送"
+msgstr "當員工不工作時，儘管沒有休假，在出勤模組中手動傳送"
 
 #. module: hr_presence
 #: model:ir.actions.server,name:hr_presence.action_hr_employee_presence_absent

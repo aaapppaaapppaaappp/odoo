@@ -270,7 +270,7 @@ msgstr ""
 "<div style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
 "    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
 "        你好！<br/><br/>\n"
-"        你獲邀請查看此課程： <t t-out=\"object.channel_id.name or ''\">園藝基"
+"        你獲邀請檢視此課程： <t t-out=\"object.channel_id.name or ''\">園藝基"
 "礎</t>。\n"
 "    </p>\n"
 "</div>\n"
@@ -386,7 +386,7 @@ msgstr ""
 "\">\n"
 "                        你好！<br/><br/>\n"
 "                        <t t-out=\"user.name or ''\">Mitchell Admin</t> 向你"
-"分享了 <strong t-out=\"object.name or ''\">文件</strong>！\n"
+"分享了 <strong t-out=\"object.name or ''\">檔案</strong>！\n"
 "                        </p><div style=\"margin: 16px 8px 16px 8px; text-"
 "align: center;\">\n"
 "                            <a t-att-href=\"object.website_absolute_url\">\n"
@@ -402,7 +402,7 @@ msgstr ""
 "'#875A7B'}}; padding: 8px 16px 8px 16px;                                 "
 "text-decoration: none; color: {{user.company_id.email_primary_color or "
 "'#FFFFFF'}}; border-radius: 5px;\">\n"
-"                                檢視 <strong t-out=\"object.name or ''\">文件"
+"                                檢視 <strong t-out=\"object.name or ''\">檔案"
 "</strong></a>\n"
 "                        </div>\n"
 "                        <t t-if=\"user.signature\" data-o-mail-quote-"
@@ -460,7 +460,7 @@ msgstr ""
 "\">\n"
 "                        你好！<br/><br/>\n"
 "                        <t t-out=\"user.name or ''\">Mitchell Admin</t> 向你"
-"分享了 <t t-out=\"object.slide_category or ''\">文件</t>「<strong t-"
+"分享了 <t t-out=\"object.slide_category or ''\">檔案</t>「<strong t-"
 "out=\"object.name or ''\">樹木</strong>」！\n"
 "                        </p><div style=\"margin: 16px 8px 16px 8px; text-"
 "align: center;\">\n"
@@ -559,7 +559,7 @@ msgstr ""
 "{{object.user_id.company_id.email_secondary_color or '#875A7B'}}; padding: "
 "8px 16px 8px 16px; text-decoration: none; color: "
 "{{object.user_id.company_id.email_primary_color or '#FFFFFF'}}; border-"
-"radius: 5px;\">查看內容</a>\n"
+"radius: 5px;\">檢視內容</a>\n"
 "                        </div>\n"
 "                        希望你喜歡這獨家內容！\n"
 "                        <t t-if=\"user.signature\" data-o-mail-quote-"
@@ -4429,7 +4429,7 @@ msgstr "新課程"
 msgid ""
 "New {{ object.slide_category }} published on {{ object.channel_id.name }}"
 msgstr ""
-"新的 {{ object.slide_category }} 已在 {{ object.channel_id.name }} 發佈"
+"新的 {{ object.slide_category }} 已在 {{ object.channel_id.name }} 釋出"
 
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.course_slides_cards
@@ -5445,27 +5445,27 @@ msgstr "發送電子郵件"
 #. module: website_slides
 #: model:mail.template,description:website_slides.mail_template_channel_completed
 msgid "Sent to attendees once they've completed the course"
-msgstr "參加者完成課程後發送給他們"
+msgstr "參加者完成課程後傳送給他們"
 
 #. module: website_slides
 #: model:mail.template,description:website_slides.slide_template_published
 msgid "Sent to attendees when new course is published"
-msgstr "新課程發佈時發送給參加者"
+msgstr "新課程釋出時傳送給參加者"
 
 #. module: website_slides
 #: model:mail.template,description:website_slides.mail_template_slide_channel_enroll
 msgid "Sent to attendees when they are added to a course"
-msgstr "參加者被加入至課程時發送給他們"
+msgstr "參加者被加入至課程時傳送給他們"
 
 #. module: website_slides
 #: model:mail.template,description:website_slides.mail_template_slide_channel_invite
 msgid "Sent to potential attendees to check out the course."
-msgstr "發送給潛在參加者以查看課程。"
+msgstr "傳送給潛在參加者以檢視課程。"
 
 #. module: website_slides
 #: model:mail.template,description:website_slides.slide_template_shared
 msgid "Sent when attendees share the course by email"
-msgstr "參加者以電郵分享課程時發送"
+msgstr "參加者以電郵分享課程時傳送"
 
 #. module: website_slides
 #: model:ir.model.fields,field_description:website_slides.field_slide_channel__seo_name
@@ -6853,7 +6853,7 @@ msgstr "您已加入此頻道"
 #. module: website_slides
 #: model:mail.template,subject:website_slides.mail_template_slide_channel_invite
 msgid "You have been invited to check out {{ object.channel_id.name }}"
-msgstr "你獲邀請查看 {{ object.channel_id.name }}"
+msgstr "你獲邀請檢視 {{ object.channel_id.name }}"
 
 #. module: website_slides
 #: model:mail.template,subject:website_slides.mail_template_slide_channel_enroll

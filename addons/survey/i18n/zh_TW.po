@@ -289,7 +289,7 @@ msgstr ""
 "                <p>\n"
 "                    現附上你的\n"
 "                        <strong t-out=\"object.survey_id.display_name or "
-"''\">家具創作</strong>\n"
+"''\">傢俱創作</strong>\n"
 "                    認證\n"
 "                </p>\n"
 "                <p>恭喜你測試合格並得分 <strong t-"
@@ -3921,12 +3921,12 @@ msgstr "通過信件發送"
 #. module: survey
 #: model:mail.template,description:survey.mail_template_certification
 msgid "Sent to participant if they succeeded the certification"
-msgstr "如果參加者成功獲得認證，則發送給參加者"
+msgstr "如果參加者成功獲得認證，則傳送給參加者"
 
 #. module: survey
 #: model:mail.template,description:survey.mail_template_user_input_invite
 msgid "Sent to participant when you share a survey"
-msgstr "分享調查時發送給參加者"
+msgstr "分享調查時傳送給參加者"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_question__sequence

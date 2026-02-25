@@ -399,7 +399,7 @@ msgstr ""
 "                            <ol>\n"
 "                                <li t-foreach=\"ctx['partner_leads']\" t-"
 "as=\"lead\"><a t-att-href=\"lead['lead_link']\" t-out=\"lead['lead_id'].name "
-"or '對象未定義'\">對象未定義</a>，<t t-out=\"lead['lead_id'].partner_name or "
+"or '物件未定義'\">物件未定義</a>，<t t-out=\"lead['lead_id'].partner_name or "
 "lead['lead_id'].contact_name or '聯絡人姓名未定義'\">聯絡人姓名未定義</t>，"
 "<t t-out=\"lead['lead_id'].country_id and lead['lead_id'].country_id.name or "
 "'國家/地區未定義'\">國家/地區未定義</t>，<t t-"
@@ -408,7 +408,7 @@ msgstr ""
 "                            </ol>\n"
 "                            <t t-if=\"ctx.get('partner_in_portal')\">\n"
 "                                請登入你的<a t-att-href=\"'%s?db=%s' % "
-"(object.get_base_url(), object.env.cr.dbname)\">合作夥伴頁面</a>以查看詳情。"
+"(object.get_base_url(), object.env.cr.dbname)\">合作夥伴頁面</a>以檢視詳情。"
 "每名潛在客戶，頁面左上角都有兩個按鈕：「我感興趣」以及「我不感興趣」。你在聯"
 "絡潛在客戶後應按下按鈕。<br/>\n"
 "                            </t>\n"
@@ -1421,7 +1421,7 @@ msgstr "發送信件"
 #. module: website_crm_partner_assign
 #: model:mail.template,description:website_crm_partner_assign.email_template_lead_forward_mail
 msgid "Sent to partner when a lead has been assigned to him"
-msgstr "指派潛在商機時發送給合作夥伴"
+msgstr "指派潛在商機時傳送給合作夥伴"
 
 #. module: website_crm_partner_assign
 #: model:ir.model.fields,field_description:website_crm_partner_assign.field_res_partner__grade_sequence

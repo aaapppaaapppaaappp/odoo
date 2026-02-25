@@ -832,7 +832,7 @@ msgstr "郵件群組：取消訂閱郵寄清單"
 #. module: mail_group
 #: model:mail.template,name:mail_group.mail_template_guidelines
 msgid "Mail Group: Send Guidelines"
-msgstr "郵件群組：發送使用指引"
+msgstr "郵件群組：傳送使用指引"
 
 #. module: mail_group
 #: model:ir.actions.act_window,name:mail_group.mail_group_action
@@ -1336,12 +1336,12 @@ msgstr "向新成員發送指引"
 #. module: mail_group
 #: model:mail.template,description:mail_group.mail_template_guidelines
 msgid "Sent to people who subscribed to a mailing group with group guidelines"
-msgstr "發送給訂閱了設有群組使用指引的郵寄群組用戶"
+msgstr "傳送給訂閱了設有群組使用指引的郵寄群組使用者"
 
 #. module: mail_group
 #: model:mail.template,description:mail_group.mail_template_list_unsubscribe
 msgid "Sent to people who unsubscribed from a mailing group"
-msgstr "發送給從郵寄群組取消訂閱的人"
+msgstr "傳送給從郵寄群組取消訂閱的人"
 
 #. module: mail_group
 #: model:ir.model.fields,field_description:mail_group.field_mail_group_message__moderation_status

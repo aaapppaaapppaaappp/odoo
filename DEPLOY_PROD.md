@@ -4,10 +4,10 @@
 
 Workflow: `.github/workflows/ghcr-images.yml`
 
-It pushes both images on every `main` push (and `v*` tag):
+It pushes both images on every `19.0` push (and `v*` tag):
 - `ghcr.io/<org>/odoo:sha-<git-sha>`
 - `ghcr.io/<org>/odoo-proxy:sha-<git-sha>`
-- branch/tag refs (for example `main`)
+- branch/tag refs (for example `19.0`)
 - `latest` on default branch
 
 Use the immutable `sha-<git-sha>` tag in production env files.

@@ -1,0 +1,5 @@
+# Extra Python dependencies required by custom addons.
+cssselect>=1.2,<2.0
+google-auth>=2.0,<3.0
+pandas>=2.2,<3.0
+phonenumbers>=8.13,<10.0

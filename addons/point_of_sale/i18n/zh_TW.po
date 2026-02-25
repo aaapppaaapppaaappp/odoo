@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~18.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-30 18:35+0000\n"
+"POT-Creation-Date: 2026-02-20 18:35+0000\n"
 "PO-Revision-Date: 2025-12-20 09:39+0000\n"
 "Last-Translator: \"Tony Ng (ngto)\" <ngto@odoo.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://translate.odoo.com/"
@@ -9394,16 +9394,6 @@ msgid ""
 msgstr "該日記賬與支付方式相關聯,不能修改其類型"
 
 #. module: point_of_sale
-#. odoo-python
-#: code:addons/point_of_sale/models/account_journal.py:0
-msgid ""
-"This journal is associated with payment method %(payment_method)s that is "
-"being used by order %(pos_order)s in the active pos session %(pos_session)s"
-msgstr ""
-"此日記賬已與付款方式 %(payment_method)s 相關聯，該付款方式由訂單 %"
-"(pos_order)s 所使用，相關的生效銷售點操作時段：%(pos_session)s"
-
-#. module: point_of_sale
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/utils/debug/debug_widget.js:0
 msgid "This operation will destroy all ${"
@@ -9663,7 +9653,7 @@ msgstr "連稅總價格："
 
 #. module: point_of_sale
 #. odoo-javascript
-#: code:addons/point_of_sale/static/src/app/components/popups/product_info_popup/product_info_popup.xml:0
+#: code:addons/point_of_sale/static/src/app/components/popups/product_info_popup/product_info_popup.js:0
 msgid "Total VAT:"
 msgstr "增值稅總額："
 
@@ -9976,10 +9966,15 @@ msgstr "UUID"
 
 #. module: point_of_sale
 #. odoo-javascript
-#: code:addons/point_of_sale/static/src/app/components/popups/product_info_popup/product_info_popup.js:0
 #: code:addons/point_of_sale/static/src/app/screens/receipt_screen/receipt/receipt_header/receipt_header.xml:0
 msgid "VAT"
 msgstr "增值稅"
+
+#. module: point_of_sale
+#. odoo-javascript
+#: code:addons/point_of_sale/static/src/app/components/popups/product_info_popup/product_info_popup.js:0
+msgid "VAT:"
+msgstr "稅項："
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -10182,6 +10177,14 @@ msgid ""
 msgstr ""
 
 #. module: point_of_sale
+#. odoo-python
+#: code:addons/point_of_sale/models/account_journal.py:0
+msgid ""
+"You can not archive this journal because it is set on the following payment "
+"method : %s."
+msgstr ""
+
+#. module: point_of_sale
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/screens/product_screen/product_screen.js:0
 msgid "You can not change the %s of the refund order."
@@ -10241,6 +10244,14 @@ msgid ""
 "You cannot archive '%(picking_type)s' as it is used by POS configuration '%"
 "(config)s'."
 msgstr "不可封存 %(picking_type)s，因已被銷售點配置「%(config)s」使用。"
+
+#. module: point_of_sale
+#. odoo-python
+#: code:addons/point_of_sale/models/product_template.py:0
+msgid ""
+"You cannot archive a product that is set as a special product in a Point of "
+"Sale configuration. Please change the configuration first."
+msgstr ""
 
 #. module: point_of_sale
 #. odoo-python
@@ -10577,13 +10588,6 @@ msgstr "預測"
 
 #. module: point_of_sale
 #. odoo-javascript
-#: code:addons/point_of_sale/static/src/app/components/popups/combo_configurator_popup/combo_configurator_popup.xml:0
-#: model_terms:ir.ui.view,arch_db:point_of_sale.product_combo_view_form
-msgid "free"
-msgstr "免費"
-
-#. module: point_of_sale
-#. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/components/popups/product_info_popup/product_info_popup.xml:0
 msgid "from"
 msgstr "從"
@@ -10613,6 +10617,12 @@ msgstr "進行中"
 #: code:addons/point_of_sale/static/src/app/screens/product_screen/product_screen.xml:0
 msgid "in this category."
 msgstr "在此類別中。"
+
+#. module: point_of_sale
+#. odoo-javascript
+#: code:addons/point_of_sale/static/src/app/components/popups/combo_configurator_popup/combo_configurator_popup.xml:0
+msgid "included"
+msgstr ""
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -10700,6 +10710,17 @@ msgstr "以啟動該些按鈕。"
 msgid "using"
 msgstr "使用"
 
+#~ msgid "free"
+#~ msgstr "免費"
+
+#~ msgid ""
+#~ "This journal is associated with payment method %(payment_method)s that is "
+#~ "being used by order %(pos_order)s in the active pos session %"
+#~ "(pos_session)s"
+#~ msgstr ""
+#~ "此日記賬已與付款方式 %(payment_method)s 相關聯，該付款方式由訂單 %"
+#~ "(pos_order)s 所使用，相關的生效銷售點操作時段：%(pos_session)s"
+
 #~ msgid ""
 #~ "Unable to create consolidated invoice/s because the following orders "
 #~ "can't be invoiced.\n"
@@ -10709,9 +10730,6 @@ msgstr "使用"
 #~ "未能建立合併發票，因為未能為以下訂單開立發票。\n"
 #~ "\n"
 #~ "%s"
-
-#~ msgid "VAT:"
-#~ msgstr "稅項："
 
 #~ msgid "Ok"
 #~ msgstr "確定"

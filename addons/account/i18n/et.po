@@ -27,7 +27,7 @@
 # Birgit Vijar, 2023
 # Leaanika Randmets, 2023
 # Martin Trigaux, 2023
-# Tairi Tiimann <tairi@avalah.ee>, 2025.
+# Tairi Tiimann <tairi@avalah.ee>, 2025, 2026.
 # Kristina Pešehodko <kristina@avalah.ee>, 2025.
 # Weblate <noreply-mt-weblate@weblate.org>, 2025.
 # Eelma <karin.eelma@impactic.ee>, 2026.
@@ -35,9 +35,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-25 18:35+0000\n"
-"PO-Revision-Date: 2026-01-23 07:38+0000\n"
-"Last-Translator: Eelma <karin.eelma@impactic.ee>\n"
+"POT-Creation-Date: 2026-02-20 18:35+0000\n"
+"PO-Revision-Date: 2026-02-05 15:34+0000\n"
+"Last-Translator: Tairi Tiimann <tairi@avalah.ee>\n"
 "Language-Team: Estonian <https://translate.odoo.com/projects/odoo-19/account/"
 "et/>\n"
 "Language: et\n"
@@ -90,6 +90,14 @@ msgstr ""
 "        nt 180 / (1 - 10%) = 200 (hind ei sisalda maksu)\n"
 "       nt 200 * (1 - 10%) = 180 (hind sisaldab maksu)\n"
 "        "
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_move_send.py:0
+msgid ""
+"\n"
+"Please contact your administrator."
+msgstr ""
 
 #. module: account
 #. odoo-python
@@ -227,6 +235,12 @@ msgid ""
 msgstr ""
 "%(order)s - %(order_line)s; %(quantity_invoiced)s Arveldatud,%"
 "(quantity_delivered)s Tarnitud hinnaga %(unit_price)s ühiku kohta"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/wizard/accrued_orders.py:0
+msgid "%(order)s - %(order_line)s; price difference for %(product)s"
+msgstr ""
 
 #. module: account
 #. odoo-python
@@ -804,14 +818,6 @@ msgid ""
 msgstr ""
 "<b>%(count)s#</b> Osamakse summas <b>%(amount)s</b> tähtajaga <b "
 "style='color: #704A66;'>%(date)s</b>"
-
-#. module: account
-#: model_terms:ir.ui.view,arch_db:account.view_partner_property_form
-msgid ""
-"<br/>\n"
-"                        <span>Please make sure that this is a wanted "
-"behavior.</span>"
-msgstr ""
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
@@ -1526,10 +1532,7 @@ msgstr "<span>$ <span class=\"oe_currency_value\">19,250.00</span></span>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
-msgid ""
-"<span>1.00</span>\n"
-"                                                        <span "
-"groups=\"uom.group_uom\">Units</span>"
+msgid "<span>1.00</span>"
 msgstr ""
 
 #. module: account
@@ -5223,6 +5226,8 @@ msgid "Chart of accounts set!"
 msgstr "Kontoplaan on määratud!"
 
 #. module: account
+#. odoo-python
+#: code:addons/account/models/account_move_send.py:0
 #: model_terms:ir.ui.view,arch_db:account.report_hash_integrity
 msgid "Check"
 msgstr "Kontroll"
@@ -11012,6 +11017,7 @@ msgstr "Andmik:"
 #: model:ir.model.fields,field_description:account.field_account_reconcile_model__match_journal_ids
 #: model:ir.model.fields,field_description:account.field_account_report__filter_journals
 #: model:ir.ui.menu,name:account.menu_action_account_journal_form
+#: model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
 msgid "Journals"
 msgstr "Andmikud"
 
@@ -12769,14 +12775,6 @@ msgstr "Dokumentide paigutamise juurutamine"
 #: model:ir.model,name:account.model_onboarding_onboarding_step
 msgid "Onboarding Step"
 msgstr "Onboarding Samm"
-
-#. module: account
-#. odoo-python
-#: code:addons/account/models/account_move.py:0
-msgid ""
-"Once a document has been posted once, its type is set in stone and you can't "
-"change it anymore."
-msgstr ""
 
 #. module: account
 #. odoo-javascript
@@ -17412,6 +17410,14 @@ msgid ""
 msgstr ""
 
 #. module: account
+#. odoo-python
+#: code:addons/account/models/account_move.py:0
+msgid ""
+"The company bank account linked to this invoice is not trusted, please "
+"double-check and trust it before confirming, or remove it"
+msgstr ""
+
+#. module: account
 #: model:ir.model.fields,help:account.field_account_tax_repartition_line__company_id
 msgid "The company this distribution line belongs to."
 msgstr ""
@@ -17562,6 +17568,14 @@ msgstr ""
 #: model:ir.model.fields,help:account.field_account_move__secured
 msgid "The entry is secured with an inalterable hash."
 msgstr "Kanne on kaitstud pöördumatu räsiga."
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_move.py:0
+msgid ""
+"The entry is using accounts (%(accounts_codes_names)s) from a different "
+"company."
+msgstr ""
 
 #. module: account
 #: model:ir.model.fields,help:account.field_product_category__property_account_expense_categ_id
@@ -17885,6 +17899,14 @@ msgstr "Järelejäänud summa andmiku kandereal ettevõtte valuutas."
 #: code:addons/account/models/account_bank_statement.py:0
 msgid "The running balance (%s) doesn't match the specified ending balance."
 msgstr "Jooksev saldo (%s) ei ole kooskõlas lõpliku saldoga."
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_move_send.py:0
+msgid ""
+"The scheduled action 'Send Invoices automatically' is archived. You won't be "
+"able to send invoices in batch."
+msgstr ""
 
 #. module: account
 #. odoo-python
@@ -19024,6 +19046,11 @@ msgid "Unit Price:"
 msgstr "Ühikuhind:"
 
 #. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+msgid "Units"
+msgstr ""
+
+#. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "Units & Packagings"
 msgstr "Mõõtühikud ja pakendid"
@@ -20085,6 +20112,13 @@ msgstr ""
 
 #. module: account
 #. odoo-python
+#: code:addons/account/models/account_payment.py:0
+msgid ""
+"You cannot change the amount of a payment with multiple liquidity lines."
+msgstr ""
+
+#. module: account
+#. odoo-python
 #: code:addons/account/models/company.py:0
 msgid ""
 "You cannot change the currency of the company since some journal items "
@@ -20440,6 +20474,13 @@ msgstr ""
 msgid ""
 "You cannot switch an account to prevent the reconciliation if some partial "
 "reconciliations are still pending."
+msgstr ""
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_move.py:0
+msgid ""
+"You cannot switch the type of a document with an existing sequence number."
 msgstr ""
 
 #. module: account
@@ -20908,7 +20949,7 @@ msgstr "id"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid "in"
-msgstr "puhkused"
+msgstr "valuutas"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_default_terms_and_conditions

@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-30 18:35+0000\n"
-"PO-Revision-Date: 2026-01-30 07:44+0000\n"
+"POT-Creation-Date: 2026-02-20 18:35+0000\n"
+"PO-Revision-Date: 2026-02-11 16:33+0000\n"
 "Last-Translator: \"Junko Augias (juau)\" <juau@odoo.com>\n"
 "Language-Team: Japanese <https://translate.odoo.com/projects/odoo-19/"
 "point_of_sale/ja/>\n"
@@ -738,7 +738,7 @@ msgstr "point_of_sale用のSMS機能を有効化する"
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config__active
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_payment_method__active
 msgid "Active"
-msgstr "アクティブ"
+msgstr "有効"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session__activity_ids
@@ -965,7 +965,7 @@ msgstr "キャッシャーが明細ごとに値引を設定できるようにす
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
 msgid "Allow to access each other's active orders"
-msgstr "相互のアクティブなオーダへアクセスを許可"
+msgstr "相互の有効なオーダへアクセスを許可"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.pos_config_view_form
@@ -3567,7 +3567,7 @@ msgstr "フォールバック命名法"
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config__fast_payment_method_ids
 #: model:ir.model.fields,field_description:point_of_sale.field_res_config_settings__pos_fast_payment_method_ids
 msgid "Fast Payment Methods"
-msgstr "クイック支払い方法"
+msgstr "クイック支払方法"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config__use_fast_payment
@@ -3873,7 +3873,7 @@ msgstr "IoT BoxへのHTTPS接続に失敗しました"
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config__has_active_session
 #: model:ir.model.fields,field_description:point_of_sale.field_res_config_settings__pos_has_active_session
 msgid "Has Active Session"
-msgstr "アクティブなセッションがあります"
+msgstr "有効なセッションがあります"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session__cash_control
@@ -3954,8 +3954,8 @@ msgid ""
 "plate mid-meal.\n"
 "Make sure to close all sessions first to avoid any issues."
 msgstr ""
-"お待ち下さい! POSセッションがまだアクティブなのに商品をアーカイブするのは、ま"
-"るで食事の途中でお皿を下げるようなものです。\n"
+"お待ち下さい! POSセッションがまだ有効なのに商品をアーカイブするのは、まるで食"
+"事の途中でお皿を下げるようなものです。\n"
 "問題を避けるために、必ずすべてのセッションをクローズしてからにして下さい。"
 
 #. module: point_of_sale
@@ -5003,7 +5003,7 @@ msgstr "最大値に達しました"
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/backend/test_epos/test_epos.js:0
 msgid "Mechanical error, please check the printer"
-msgstr "機械的なエラー。プリンタをご確認ください。"
+msgstr "機械的なエラー。プリンタを確認してください。"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.res_config_settings_view_form
@@ -7644,7 +7644,7 @@ msgstr "請求書をリクエスト"
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/screens/payment_screen/payment_lines/payment_lines.xml:0
 msgid "Request sent"
-msgstr "要求が送信されました"
+msgstr "リクエストを送信しました"
 
 #. module: point_of_sale
 #. odoo-python
@@ -7763,7 +7763,7 @@ msgstr "逆仕訳処理済POSオーダ"
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/screens/ticket_screen/ticket_screen.xml:0
 msgid "Review"
-msgstr "レビュー"
+msgstr "確認"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -9562,16 +9562,6 @@ msgid ""
 msgstr "この仕訳帳は支払方法に関連付けられています。タイプは変更できません。"
 
 #. module: point_of_sale
-#. odoo-python
-#: code:addons/point_of_sale/models/account_journal.py:0
-msgid ""
-"This journal is associated with payment method %(payment_method)s that is "
-"being used by order %(pos_order)s in the active pos session %(pos_session)s"
-msgstr ""
-"この仕訳帳は、支払方法%(payment_method)s (オーダ%(pos_order)sで使用されてい"
-"る、アクティブなposセッション%(pos_session)s内)に関連付けられています。"
-
-#. module: point_of_sale
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/utils/debug/debug_widget.js:0
 msgid "This operation will destroy all ${"
@@ -9838,7 +9828,7 @@ msgstr "合計税込価格:"
 
 #. module: point_of_sale
 #. odoo-javascript
-#: code:addons/point_of_sale/static/src/app/components/popups/product_info_popup/product_info_popup.xml:0
+#: code:addons/point_of_sale/static/src/app/components/popups/product_info_popup/product_info_popup.js:0
 msgid "Total VAT:"
 msgstr "合計税額:"
 
@@ -10155,10 +10145,15 @@ msgstr "UUID"
 
 #. module: point_of_sale
 #. odoo-javascript
-#: code:addons/point_of_sale/static/src/app/components/popups/product_info_popup/product_info_popup.js:0
 #: code:addons/point_of_sale/static/src/app/screens/receipt_screen/receipt/receipt_header/receipt_header.xml:0
 msgid "VAT"
 msgstr "VAT（Value Added Tax）"
+
+#. module: point_of_sale
+#. odoo-javascript
+#: code:addons/point_of_sale/static/src/app/components/popups/product_info_popup/product_info_popup.js:0
+msgid "VAT:"
+msgstr "消費税:"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -10372,6 +10367,14 @@ msgid ""
 msgstr ""
 
 #. module: point_of_sale
+#. odoo-python
+#: code:addons/point_of_sale/models/account_journal.py:0
+msgid ""
+"You can not archive this journal because it is set on the following payment "
+"method : %s."
+msgstr ""
+
+#. module: point_of_sale
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/screens/product_screen/product_screen.js:0
 msgid "You can not change the %s of the refund order."
@@ -10443,6 +10446,14 @@ msgstr ""
 
 #. module: point_of_sale
 #. odoo-python
+#: code:addons/point_of_sale/models/product_template.py:0
+msgid ""
+"You cannot archive a product that is set as a special product in a Point of "
+"Sale configuration. Please change the configuration first."
+msgstr ""
+
+#. module: point_of_sale
+#. odoo-python
 #: code:addons/point_of_sale/models/pos_order.py:0
 msgid "You cannot change the payment of a printed order."
 msgstr "印刷済オーダの支払を変更することはできません。"
@@ -10510,7 +10521,7 @@ msgstr "POSの設定で使用されている丸め方法は削除できません
 #. odoo-python
 #: code:addons/point_of_sale/models/ir_sequence.py:0
 msgid "You cannot delete a sequence used in an active POS config: %s"
-msgstr "アクティブなPOS設定で使用されている連番は削除できません：%s"
+msgstr "有効なPOS設定で使用されている連番は削除できません：%s"
 
 #. module: point_of_sale
 #. odoo-python
@@ -10789,13 +10800,6 @@ msgstr "予測"
 
 #. module: point_of_sale
 #. odoo-javascript
-#: code:addons/point_of_sale/static/src/app/components/popups/combo_configurator_popup/combo_configurator_popup.xml:0
-#: model_terms:ir.ui.view,arch_db:point_of_sale.product_combo_view_form
-msgid "free"
-msgstr "無料"
-
-#. module: point_of_sale
-#. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/components/popups/product_info_popup/product_info_popup.xml:0
 msgid "from"
 msgstr "："
@@ -10825,6 +10829,12 @@ msgstr "進行中"
 #: code:addons/point_of_sale/static/src/app/screens/product_screen/product_screen.xml:0
 msgid "in this category."
 msgstr "このカテゴリ内"
+
+#. module: point_of_sale
+#. odoo-javascript
+#: code:addons/point_of_sale/static/src/app/components/popups/combo_configurator_popup/combo_configurator_popup.xml:0
+msgid "included"
+msgstr ""
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -10912,6 +10922,17 @@ msgstr "ボタンを有効化します。"
 msgid "using"
 msgstr "支払方法:"
 
+#~ msgid "free"
+#~ msgstr "無料"
+
+#~ msgid ""
+#~ "This journal is associated with payment method %(payment_method)s that is "
+#~ "being used by order %(pos_order)s in the active pos session %"
+#~ "(pos_session)s"
+#~ msgstr ""
+#~ "この仕訳帳は、支払方法%(payment_method)s (オーダ%(pos_order)sで使用されて"
+#~ "いる、有効なposセッション%(pos_session)s内)に関連付けられています。"
+
 #~ msgid ""
 #~ "Local Network Access configuration is enabled, but your browser is not "
 #~ "Chromium-based. Please use a Chromium-based browser to benefit from this "
@@ -10930,9 +10951,6 @@ msgstr "支払方法:"
 #~ "以下のオーダに請求書を作成できないため、統合請求書を作成できません。\n"
 #~ "\n"
 #~ "%s"
-
-#~ msgid "VAT:"
-#~ msgstr "消費税:"
 
 #~ msgid "Ok"
 #~ msgstr "OK"

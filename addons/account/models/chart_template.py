@@ -782,6 +782,8 @@ class AccountChartTemplate(models.AbstractModel):
         if bank_fees:
             bank_fees.line_ids.sudo().write({'account_id': self._get_bank_fees_reco_account(company).id})
 
+        company._initiate_account_onboardings()
+
     def _get_bank_fees_reco_account(self, company):
         # We want a bank fees account if possible and the first expense account as a fallback.
         AccountAccount = self.env['account.account'].with_company(company)
@@ -1469,6 +1471,7 @@ class AccountChartTemplate(models.AbstractModel):
             chart_template_data = template_data or self.env['account.chart.template'] \
                 .with_context(ignore_missing_tags=True) \
                 .with_company(company) \
+                .sudo() \
                 ._get_chart_template_data(company.chart_template)
             chart_template_data.pop('template_data', None)
             for mname, data in chart_template_data.items():

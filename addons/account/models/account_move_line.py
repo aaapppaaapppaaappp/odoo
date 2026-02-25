@@ -378,7 +378,7 @@ class AccountMoveLine(models.Model):
     price_unit = fields.Float(
         string='Unit Price',
         compute="_compute_price_unit", store=True, readonly=False, precompute=True,
-        digits='Product Price',
+        min_display_digits='Product Price',
     )
     price_subtotal = fields.Monetary(
         string='Subtotal',
@@ -555,8 +555,12 @@ class AccountMoveLine(models.Model):
                 n_terms = len(line.move_id.invoice_payment_term_id.line_ids)
                 if line.move_id.payment_reference and line.move_id.ref and line.move_id.payment_reference != line.move_id.ref:
                     name = f'{line.move_id.ref} - {line.move_id.payment_reference}'
+                elif line.move_id.payment_reference:
+                    name = line.move_id.payment_reference
+                elif line.move_id.move_type in ['in_invoice', 'in_refund'] and line.move_id.ref:
+                    name = line.move_id.ref
                 else:
-                    name = line.move_id.payment_reference or False
+                    name = False
 
                 if n_terms > 1:
                     index = term_lines._ids.index(line.id) if line in term_lines else len(term_lines)
@@ -567,7 +571,7 @@ class AccountMoveLine(models.Model):
             if not line.product_id or line.display_type in ('line_section', 'line_subsection', 'line_note'):
                 continue
 
-            if not line.name or line._origin.name == get_name(line._origin):
+            if not line.name or line._origin.name == get_name(line._origin) or line.product_id != line._origin.product_id:
                 line.name = get_name(line)
 
     def _compute_account_id(self):
@@ -1895,7 +1899,7 @@ class AccountMoveLine(models.Model):
             names.append(move_name)
         if move_ref and move_ref != '/':
             names.append(f"({move_ref})")
-        if line_name and line_name not in ['/', move_name, f"{move_ref} - {move_name}"]:
+        if line_name and line_name not in ['/', move_name, f"{move_ref} - {move_name}", move_ref]:
             names.append(line_name)
         name = ' '.join(names)
         return name or _('Draft Entry')

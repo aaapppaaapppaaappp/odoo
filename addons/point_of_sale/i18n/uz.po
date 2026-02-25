@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-30 18:35+0000\n"
+"POT-Creation-Date: 2026-02-20 18:35+0000\n"
 "PO-Revision-Date: 2025-10-08 18:37+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11100,17 +11100,6 @@ msgstr ""
 "Ushbu jurnal to‘lov usuli bilan bog‘langan. Uning turini o‘zgartira olmaysiz."
 
 #. module: point_of_sale
-#. odoo-python
-#: code:addons/point_of_sale/models/account_journal.py:0
-#, fuzzy
-msgid ""
-"This journal is associated with payment method %(payment_method)s that is "
-"being used by order %(pos_order)s in the active pos session %(pos_session)s"
-msgstr ""
-"Bu jurnal %(payment_method)s to‘lov usuli bilan bog‘langan bo‘lib, u %"
-"(pos_session)s faol pos seansidagi %(pos_order)s buyurtmada ishlatilmoqda."
-
-#. module: point_of_sale
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/utils/debug/debug_widget.js:0
 #, fuzzy
@@ -11419,7 +11408,7 @@ msgstr "Soliqlar bilan umumiy narx:"
 
 #. module: point_of_sale
 #. odoo-javascript
-#: code:addons/point_of_sale/static/src/app/components/popups/product_info_popup/product_info_popup.xml:0
+#: code:addons/point_of_sale/static/src/app/components/popups/product_info_popup/product_info_popup.js:0
 #, fuzzy
 msgid "Total VAT:"
 msgstr "Jami QQS:"
@@ -11797,11 +11786,17 @@ msgstr "Uuid"
 
 #. module: point_of_sale
 #. odoo-javascript
-#: code:addons/point_of_sale/static/src/app/components/popups/product_info_popup/product_info_popup.js:0
 #: code:addons/point_of_sale/static/src/app/screens/receipt_screen/receipt/receipt_header/receipt_header.xml:0
 #, fuzzy
 msgid "VAT"
 msgstr "QQS"
+
+#. module: point_of_sale
+#. odoo-javascript
+#: code:addons/point_of_sale/static/src/app/components/popups/product_info_popup/product_info_popup.js:0
+#, fuzzy
+msgid "VAT:"
+msgstr "QQS:"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -12046,6 +12041,14 @@ msgid ""
 msgstr ""
 
 #. module: point_of_sale
+#. odoo-python
+#: code:addons/point_of_sale/models/account_journal.py:0
+msgid ""
+"You can not archive this journal because it is set on the following payment "
+"method : %s."
+msgstr ""
+
+#. module: point_of_sale
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/screens/product_screen/product_screen.js:0
 #, fuzzy
@@ -12121,6 +12124,14 @@ msgid ""
 msgstr ""
 "'%(picking_type)s'ni arxivlay olmaysiz, chunki u '%(config)s' POS "
 "konfiguratsiyasida ishlatilmoqda."
+
+#. module: point_of_sale
+#. odoo-python
+#: code:addons/point_of_sale/models/product_template.py:0
+msgid ""
+"You cannot archive a product that is set as a special product in a Point of "
+"Sale configuration. Please change the configuration first."
+msgstr ""
 
 #. module: point_of_sale
 #. odoo-python
@@ -12526,14 +12537,6 @@ msgstr "bashorat qilingan"
 
 #. module: point_of_sale
 #. odoo-javascript
-#: code:addons/point_of_sale/static/src/app/components/popups/combo_configurator_popup/combo_configurator_popup.xml:0
-#: model_terms:ir.ui.view,arch_db:point_of_sale.product_combo_view_form
-#, fuzzy
-msgid "free"
-msgstr "bepul"
-
-#. module: point_of_sale
-#. odoo-javascript
 #: code:addons/point_of_sale/static/src/app/components/popups/product_info_popup/product_info_popup.xml:0
 #, fuzzy
 msgid "from"
@@ -12568,6 +12571,12 @@ msgstr "bajarilmoqda"
 #, fuzzy
 msgid "in this category."
 msgstr "ushbu toifada."
+
+#. module: point_of_sale
+#. odoo-javascript
+#: code:addons/point_of_sale/static/src/app/components/popups/combo_configurator_popup/combo_configurator_popup.xml:0
+msgid "included"
+msgstr ""
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -12670,6 +12679,19 @@ msgid "using"
 msgstr "foydalanish"
 
 #, fuzzy
+#~ msgid "free"
+#~ msgstr "bepul"
+
+#, fuzzy
+#~ msgid ""
+#~ "This journal is associated with payment method %(payment_method)s that is "
+#~ "being used by order %(pos_order)s in the active pos session %"
+#~ "(pos_session)s"
+#~ msgstr ""
+#~ "Bu jurnal %(payment_method)s to‘lov usuli bilan bog‘langan bo‘lib, u %"
+#~ "(pos_session)s faol pos seansidagi %(pos_order)s buyurtmada ishlatilmoqda."
+
+#, fuzzy
 #~ msgid ""
 #~ "Unable to create consolidated invoice/s because the following orders "
 #~ "can't be invoiced.\n"
@@ -12678,7 +12700,3 @@ msgstr "foydalanish"
 #~ msgstr ""
 #~ "Birlashtirilgan hisob-faktura(lar) yaratib bo‘lmadi, chunki quyidagi "
 #~ "buyurtmalar uchun hisob-faktura yozib bo‘lmaydi.  %s"
-
-#, fuzzy
-#~ msgid "VAT:"
-#~ msgstr "QQS:"

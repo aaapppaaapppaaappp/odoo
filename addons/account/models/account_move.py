@@ -27,6 +27,7 @@ from odoo.tools import (
     float_repr,
     format_amount,
     format_date,
+    format_list,
     formatLang,
     frozendict,
     get_lang,
@@ -222,7 +223,7 @@ class AccountMove(models.Model):
         search='_search_reconciled_payment_ids',
         help='Payments that have been reconciled with this invoice.'
     )
-    payment_count = fields.Integer(compute='_compute_payment_count')
+    payment_count = fields.Integer(compute='_compute_payment_count', compute_sudo=True)
 
     # === Statement fields === #
     statement_line_id = fields.Many2one(
@@ -1048,13 +1049,12 @@ class AccountMove(models.Model):
             """Sorting priority:
             0. Same currency as the move or no currency
             1. Different currency
-            Then: prefer banks allowing outgoing payments (trusted ones)
             """
             if bank.currency_id == move.currency_id or not bank.currency_id:
                 currency_priority = 0
             else:
                 currency_priority = 1
-            return (currency_priority, not bank.allow_out_payment)
+            return currency_priority
 
         for move in self:
             if move.is_inbound() and (
@@ -1062,22 +1062,22 @@ class AccountMove(models.Model):
                     move.preferred_payment_method_line_id
                     or move.bank_partner_id.property_inbound_payment_method_line_id
                 )
-            ) and payment_method.journal_id:
+            ) and payment_method.journal_id and payment_method.journal_id.bank_account_id.allow_out_payment:
                 move.partner_bank_id = payment_method.journal_id.bank_account_id
                 continue
 
             move.partner_bank_id = move.bank_partner_id.bank_ids.filtered(
-                lambda bank: not bank.company_id or bank.company_id == move.company_id
+                lambda bank: (not bank.company_id or bank.company_id == move.company_id) and bank.allow_out_payment
             ).sorted(key=_bank_selection_key)[:1]
 
     @api.depends('partner_id')
     def _compute_invoice_payment_term_id(self):
         for move in self:
             move = move.with_company(move.company_id)
-            if move.is_sale_document(include_receipts=True) and move.partner_id.property_payment_term_id:
-                move.invoice_payment_term_id = move.partner_id.property_payment_term_id
-            elif move.is_purchase_document(include_receipts=True) and move.partner_id.property_supplier_payment_term_id:
-                move.invoice_payment_term_id = move.partner_id.property_supplier_payment_term_id
+            if move.is_sale_document(include_receipts=True):
+                move.invoice_payment_term_id = move.partner_id.property_payment_term_id or move.invoice_payment_term_id
+            elif move.is_purchase_document(include_receipts=True):
+                move.invoice_payment_term_id = move.partner_id.property_supplier_payment_term_id or move.invoice_payment_term_id
             else:
                 move.invoice_payment_term_id = False
 
@@ -4802,7 +4802,7 @@ class AccountMove(models.Model):
 
         if new and res:
             try:
-                attachments = self._from_files_data(files_data + self._unwrap_attachments(files_data))
+                attachments = set(self.attachment_ids + self._from_files_data(files_data + self._unwrap_attachments(files_data)))
                 self.journal_id._notify_invoice_subscribers(
                     invoice=self,
                     mail_params={
@@ -5512,6 +5512,10 @@ class AccountMove(models.Model):
                     "The recipient bank account linked to this invoice is archived.\n"
                     "So you cannot confirm the invoice."
                 ))
+            if invoice.partner_bank_id and invoice.is_inbound() and not invoice.partner_bank_id.allow_out_payment:
+                raise UserError(_(
+                    "The company bank account linked to this invoice is not trusted, please double-check and trust it before confirming, or remove it"
+                ))
             if float_compare(invoice.amount_total, 0.0, precision_rounding=invoice.currency_id.rounding) < 0:
                 validation_msgs.add(_(
                     "You cannot validate an invoice with a negative total amount. "
@@ -5560,6 +5564,14 @@ class AccountMove(models.Model):
 
             if move.line_ids.account_id.filtered(lambda account: not account.active) and not self.env.context.get('skip_account_deprecation_check'):
                 validation_msgs.add(_("A line of this move is using a archived account, you cannot post it."))
+
+            move_company_and_parents = move.company_id.sudo().parent_ids
+            mismatched_accounts = move.line_ids.mapped('account_id').filtered(lambda account: not move_company_and_parents & account.sudo().company_ids)
+            if mismatched_accounts:
+                validation_msgs.add(self.env._(
+                    "The entry is using accounts (%(accounts_codes_names)s) from a different company.",
+                    accounts_codes_names=format_list(self.env, mismatched_accounts.mapped('display_name'))
+                ))
 
         if validation_msgs:
             msg = "\n".join([line for line in validation_msgs])
@@ -5836,8 +5848,8 @@ class AccountMove(models.Model):
         return self.adjusting_entry_origin_move_ids._get_records_action(name=label)
 
     def action_switch_move_type(self):
-        if any(move.posted_before for move in self):
-            raise ValidationError(_("Once a document has been posted once, its type is set in stone and you can't change it anymore."))
+        if any((move.posted_before and move.name) for move in self):
+            raise ValidationError(_("You cannot switch the type of a document with an existing sequence number."))
         if any(move.move_type == "entry" for move in self):
             raise ValidationError(_("This action isn't available for this document."))
 
@@ -6887,6 +6899,9 @@ class AccountMove(models.Model):
         move._compute_name()  # because the name is given, we need to recompute in case it is the first invoice of the journal
 
         return move
+
+    def _attachment_fields_to_clear(self):
+        return super()._attachment_fields_to_clear() + ['message_main_attachment_id']
 
     def _message_post_after_hook(self, new_message, message_values):
         """ This method processes the attachments of a new mail.message. It handles the 3 following situations:

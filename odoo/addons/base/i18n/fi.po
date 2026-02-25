@@ -46,7 +46,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-09 12:16+0000\n"
-"PO-Revision-Date: 2026-01-30 09:26+0000\n"
+"PO-Revision-Date: 2026-02-20 11:55+0000\n"
 "Last-Translator: Saara Hakanen <sahak@odoo.com>\n"
 "Language-Team: Finnish <https://translate.odoo.com/projects/odoo-19/base/fi/>"
 "\n"
@@ -3124,7 +3124,7 @@ msgid ""
 "Adds the ability to set folder templates on products.\n"
 msgstr ""
 "\n"
-"Lisää mahdollisuuden määrittää kansiomallipohjia tuotteille.\n"
+"Lisää mahdollisuuden määrittää kansiopohjia tuotteille.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_quality_mrp
@@ -13055,8 +13055,8 @@ msgid ""
 "by choosing product variants quantity through a Grid Entry.\n"
 msgstr ""
 "\n"
-"Tämän moduulin avulla voit täyttää myyntitilauksen nopeasti\n"
-"valitsemalla tuotevarianttien määrän ruudukkosyötteessä.\n"
+"Tämän moduuli mahdollistaa myyntitilauksen nopean täyttämisen\n"
+"valitsemalla tuotevariaatioiden määrän ruudukkosyötteessä.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_base_automation
@@ -13759,34 +13759,33 @@ msgid ""
 "available for generating a payment on the selected invoice.\n"
 msgstr ""
 "\n"
-"Tämä moduuli mahdollistaa SEPA Direct Debit (SDD) -mukaisten XML-tiedostojen "
-"luomisen (yhtenäiset\n"
-"pain.008.001.02 -määritysten kanssa), joka lähetetään pankkiin, jotta\n"
-"joukko maksuja voidaan kerätä.\n"
+"Tämä moduuli mahdollistaa SEPA-suoraveloituksen (SDD) mukaisten XML-"
+"tiedostojen luomisen (yhtenäiset\n"
+"pain.008.001.02 -määritysten kanssa), joka lähetetään pankkiin\n"
+"joukkomaksujen keräämiseksi.\n"
 "\n"
-"Jotta asiakas voi käyttää tätä maksutapaa, hänen on ensin\n"
+"Käyttääkseen tätä maksutapaa, asiakkaan on ensin\n"
 "palautettava yritykselle valtuutus, jossa annetaan suostumus "
 "suoraveloituksen käyttöön.\n"
-"Tämän suostumuksen on oltava koodattuna \"asiakkaan valtuutus\" Odoossa.\n"
+"Tämän suostumuksen on oltava koodattuna 'asiakkaan valtuutus' Odoossa.\n"
 "\n"
-"Sinun on myös täytettävä seuraavat vaatimukset, jotta voit asianmukaisesti\n"
-"luoda SDD-tiedoston:\n"
+"Sinun on myös täytettävä seuraavat vaatimukset, jotta voit\n"
+"luoda SEPA-suoraveloitustiedoston asianmukaisesti:\n"
 "- Yritystililläsi on oltava voimassa oleva IBAN-numero\n"
-"- Yrityksellesi on annettava luotonantajan tunnus (tämän voi tehdä kohdassa "
-"Asetukset - Yleiset asetukset - Kirjanpito)\n"
-"- Yrityksesi on määritettävä SDD-maksujen vastaanottamista varten päiväkirja "
-"(jälleen kirjanpitomoduulin asetuksissa)\n"
+"- Yrityksellesi on annettava luotonantajan tunnus "
+"(tämän voi tehdä kohdassa Asetukset - Yleiset asetukset - Kirjanpito)\n"
+"- Yrityksesi on määritettävä SEPA-suoraveloitusmaksujen vastaanottamista "
+"varten päiväkirja (jälleen kirjanpitomoduulin asetuksissa)\n"
 "- Jokaisella asiakkaalla, jolle luot maksun, on oltava voimassa oleva IBAN-"
 "tilinumero.\n"
 "\n"
 "Odoo ilmoittaa sinulle, jos jokin näistä vaatimuksista ei täyty.\n"
 "\n"
-"Jos haluat rekisteröidä maksun avoimille laskuille, voit käyttää sille "
-"omistettua\n"
-"\"SEPA Direct Debit\" -vaihtoehtoa valitsemalla pankkitilin ohjatussa "
-"\"Rekisteröi\n"
-"maksu\" toiminnossa. Näytölle ilmestyy virheilmoitus, jos voimassa olevaa "
-"valtakirjaa ei ole\n"
+"Rekisteröidäksesi maksun avoimille laskuille, voit käyttää sille omistettua\n"
+"'SEPA-suoraveloitus' -vaihtoehtoa valitsemalla pankkitilin ohjatussa '"
+"Rekisteröi\n"
+"maksu' -toiminnossa. Näytölle ilmestyy virheilmoitus, jos voimassa olevaa "
+"valtuutusta ei ole\n"
 "käytettävissä valitun laskun maksun luomista varten.\n"
 
 #. module: base
@@ -14443,7 +14442,7 @@ msgstr ""
 "laskulomakenäkymän 'Muut tiedot' -osiossa.\n"
 "Tämä on suunniteltu erilliseksi valinnaismoduuliksi, jotta ydintoiminnot "
 "pysyvät\n"
-"selkeinä ja joustavat käyttötapaukset mahdollisina.\n"
+"selkeinä ja joustavat esimerkkitapaukset mahdollisina.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_test_crm_full
@@ -27240,13 +27239,13 @@ msgstr "Yritys, jälleenmyyjät"
 #: model:ir.module.module,description:base.module_crm_enterprise_partner_assign
 #: model:ir.module.module,summary:base.module_crm_enterprise_partner_assign
 msgid "Enterprise counterpart for Resellers"
-msgstr "Jälleenmyyjille tarkoitettu Yritysvastine"
+msgstr "Jälleenmyyjien yritysvastine"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_crm_iap_reveal_enterprise
 #: model:ir.module.module,summary:base.module_website_crm_iap_reveal_enterprise
 msgid "Enterprise counterpart of Visits -> Leads"
-msgstr "Yrityksen vastine vierailuista liideiksi"
+msgstr "Vierailuiden yritysvastine -> Liidit"
 
 #. module: base
 #: model:ir.module.module,description:base.module_mrp_workorder
@@ -31852,8 +31851,8 @@ msgid ""
 "Integrate features developped in Mail in use case involving resources "
 "instead of users"
 msgstr ""
-"Integroi sähköpostissa kehitetyt ominaisuudet käyttötapauksiin, joissa "
-"käytetään resursseja käyttäjien sijasta"
+"Integroi sähköpostissa kehitetyt ominaisuudet esimerkkitapauksiin, joissa "
+"käytetään resursseja käyttäjien sijaan"
 
 #. module: base
 #: model:ir.module.module,description:base.module_sale_loyalty_delivery
@@ -41140,7 +41139,7 @@ msgstr "Etuliite"
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_sequence__prefix
 msgid "Prefix value of the record for the sequence"
-msgstr "Järjestysluvun etuliite"
+msgstr "Tietueen etuliitteen arvo sekvenssille"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_asset__directive__prepend
@@ -46150,13 +46149,13 @@ msgstr "Tatuointiliike"
 #: model:ir.model.fields,field_description:base.field_res_partner__vat
 #: model:ir.model.fields,field_description:base.field_res_users__vat
 msgid "Tax ID"
-msgstr "ALV-numero"
+msgstr "Verotunniste"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner__vat_label
 #: model:ir.model.fields,field_description:base.field_res_users__vat_label
 msgid "Tax ID Label"
-msgstr "Verotunnusmerkki"
+msgstr "Verotunnisteen nimike"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_td
@@ -50194,7 +50193,7 @@ msgstr "Varastonhallinta: joukkosiirto"
 #: model:ir.module.module,description:base.module_data_merge_stock_account
 #: model:ir.module.module,summary:base.module_data_merge_stock_account
 msgid "Warn user in case of products merging"
-msgstr "Varoittaa käyttäjää, jos tuotteita yhdistetään"
+msgstr "Varoita käyttäjää yhdistyvistä tuotteista"
 
 #. module: base
 #. odoo-python
@@ -51105,8 +51104,8 @@ msgid ""
 "they are still used in the following case(s):\n"
 "%(usage_details)s"
 msgstr ""
-"Näitä lähtevän postin palvelimia (%(server_usage)s) ei voi arkistoida, koska "
-"niitä käytetään edelleen seuraavissa tapauksissa:\n"
+"Et voi arkistoida näitä lähevien viestien palvelimia (%(server_usage)s), "
+"koska niitä käytetään edelleen seuraavissa tapauksissa:\n"
 "%(usage_details)s"
 
 #. module: base

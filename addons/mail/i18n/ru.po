@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-25 18:36+0000\n"
-"PO-Revision-Date: 2026-01-29 13:10+0000\n"
+"POT-Creation-Date: 2026-02-06 18:35+0000\n"
+"PO-Revision-Date: 2026-02-11 17:41+0000\n"
 "Last-Translator: \"Anastasiia Koroleva (koan)\" <koan@odoo.com>\n"
 "Language-Team: Russian <https://translate.odoo.com/projects/odoo-19/mail/ru/>"
 "\n"
@@ -7043,7 +7043,7 @@ msgstr "Количество участников"
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/discuss/core/common/channel_member_list.xml:0
-#: code:addons/mail/static/src/discuss/core/common/thread_actions.js:0
+#: code:addons/mail/static/src/discuss/core/public_web/thread_actions.js:0
 #: model:ir.model.fields,field_description:mail.field_discuss_channel__channel_member_ids
 #: model_terms:ir.ui.view,arch_db:mail.discuss_channel_view_form
 msgid "Members"
@@ -11701,7 +11701,7 @@ msgstr "Это начало канала #%(channelName)s"
 #. odoo-javascript
 #: code:addons/mail/static/src/core/common/thread.js:0
 msgid "This is the start of your direct chat with %(userName)s"
-msgstr "Это начало вашего прямого чата с пользователем %(userName)s"
+msgstr "Это начало вашей переписки с %(userName)s"
 
 #. module: mail
 #. odoo-python
@@ -12288,7 +12288,7 @@ msgstr "Включить звук"
 #. odoo-python
 #: code:addons/mail/controllers/im_status.py:0
 msgid "Unexpected IM status %(status)s"
-msgstr "Неожиданный статус а чате %(status)s"
+msgstr "Неизвестный статус в чате %(status)s"
 
 #. module: mail
 #. odoo-javascript
@@ -12617,8 +12617,8 @@ msgid ""
 "Use your own servers for calls to manage heavy traffic and ensure "
 "reliability if Twilio is unavailable"
 msgstr ""
-"Используйте свои собственные серверы для звонков, чтобы справляться с "
-"высоким трафиком и обеспечить надежность, если Twilio недоступен"
+"Использовать собственные серверы телефонии для обработки высокой нагрузки и "
+"обеспечения отказоустойчивости при недоступности Twilio"
 
 #. module: mail
 #: model_terms:ir.actions.act_window,help:mail.action_ice_servers
@@ -12626,8 +12626,8 @@ msgid ""
 "Use your own servers for calls to manage heavy traffic and ensure "
 "reliability if Twilio is unavailable."
 msgstr ""
-"Используйте свои собственные серверы для звонков, чтобы справляться с "
-"высоким трафиком и обеспечить надежность, если Twilio недоступен."
+"Использовать собственные серверы телефонии для обработки высокой нагрузки и "
+"обеспечения отказоустойчивости при недоступности Twilio."
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_alias_domain_view_form

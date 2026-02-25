@@ -1,0 +1,15 @@
+services:
+  odoo_proxy:
+    image: ${ODOO_PROXY_IMAGE_REF:?Set ODOO_PROXY_IMAGE_REF}
+    container_name: odoo-proxy
+    restart: unless-stopped
+    environment:
+      ODOO_BASE_URL: ${ODOO_BASE_URL:-http://host.docker.internal:8069}
+      ODOO_DATABASE: ${ODOO_DATABASE:?Set ODOO_DATABASE}
+      ODOO_API_KEY: ${ODOO_API_KEY:?Set ODOO_API_KEY}
+      ODOO_TIMEOUT_SECONDS: ${ODOO_TIMEOUT_SECONDS:-20}
+      PROXY_BEARER_TOKEN: ${PROXY_BEARER_TOKEN:-}
+    ports:
+      - "${ODOO_PROXY_PORT:-8088}:8080"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

@@ -5,14 +5,20 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT_DIR"
 
 COMPOSE_FILE="${COMPOSE_FILE:-docker-compose.odoo.yml}"
+COMPOSE_ENV_FILE="${COMPOSE_ENV_FILE:-}"
+COMPOSE_PROJECT_NAME="${COMPOSE_PROJECT_NAME:-}"
 IMAGE_NAME="${IMAGE_NAME:-odoo-local}"
 IMAGE_TAG="${IMAGE_TAG:-dev}"
 IMAGE_REF="${IMAGE_NAME}:${IMAGE_TAG}"
 ODOO_SERVICE="${ODOO_SERVICE:-odoo}"
+DOCKERFILE_PATH="${DOCKERFILE_PATH:-Dockerfile}"
+BUILD_CONTEXT="${BUILD_CONTEXT:-.}"
 
 PUSH_IMAGE=0
 SYNC_DEPS=0
+SKIP_DEP_CHECK=0
 NO_BUILD=0
+PULL_IMAGES=0
 
 usage() {
   cat <<'EOF'
@@ -32,14 +38,25 @@ Commands:
 Options:
   --push       Push built image (used with ci/all)
   --sync-deps  Auto-sync missing addon dependencies before checks
+  --skip-deps  Skip addon dependency checks in ci/all
   --no-build   Skip docker build in ci and skip --build in cd
+  --pull       Pull latest images before cd/all (enabled automatically with --no-build)
+  --compose-file Override Docker Compose file path
+  --env-file   Pass a Docker Compose env file
+  --project    Set Docker Compose project name
+  --dockerfile Override Dockerfile path for image build
+  --context    Override docker build context
   -h, --help   Show this help
 
 Environment overrides:
-  COMPOSE_FILE  (default: docker-compose.odoo.yml)
-  IMAGE_NAME    (default: odoo-local)
-  IMAGE_TAG     (default: dev)
-  ODOO_SERVICE  (default: odoo)
+  COMPOSE_FILE         (default: docker-compose.odoo.yml)
+  COMPOSE_ENV_FILE     (default: unset)
+  COMPOSE_PROJECT_NAME (default: unset)
+  IMAGE_NAME           (default: odoo-local)
+  IMAGE_TAG            (default: dev)
+  ODOO_SERVICE         (default: odoo)
+  DOCKERFILE_PATH      (default: Dockerfile)
+  BUILD_CONTEXT        (default: .)
 EOF
 }
 
@@ -55,11 +72,31 @@ require_cmd() {
 }
 
 run() {
-  echo "+ $*"
+  printf '+'
+  for arg in "$@"; do
+    printf ' %q' "$arg"
+  done
+  printf '\n'
   "$@"
 }
 
+compose() {
+  local args=()
+  if [[ -n "$COMPOSE_PROJECT_NAME" ]]; then
+    args+=(--project-name "$COMPOSE_PROJECT_NAME")
+  fi
+  if [[ -n "$COMPOSE_ENV_FILE" ]]; then
+    args+=(--env-file "$COMPOSE_ENV_FILE")
+  fi
+  args+=(-f "$COMPOSE_FILE")
+  args+=("$@")
+  run docker compose "${args[@]}"
+}
+
 run_dependency_gate() {
+  if [[ "$SKIP_DEP_CHECK" -eq 1 ]]; then
+    return
+  fi
   require_cmd python3
   if [[ "$SYNC_DEPS" -eq 1 ]]; then
     run python3 scripts/check_external_dependencies.py \
@@ -77,9 +114,9 @@ run_dependency_gate() {
 run_ci() {
   require_cmd docker
   run_dependency_gate
-  run docker compose -f "$COMPOSE_FILE" config >/dev/null
+  compose config >/dev/null
   if [[ "$NO_BUILD" -eq 0 ]]; then
-    run docker build -f Dockerfile -t "$IMAGE_REF" .
+    run docker build -f "$DOCKERFILE_PATH" -t "$IMAGE_REF" "$BUILD_CONTEXT"
     run docker run --rm "$IMAGE_REF" --help >/dev/null
     if [[ "$PUSH_IMAGE" -eq 1 ]]; then
       run docker push "$IMAGE_REF"
@@ -89,12 +126,18 @@ run_ci() {
 
 run_cd() {
   require_cmd docker
-  if [[ "$NO_BUILD" -eq 0 ]]; then
-    run docker compose -f "$COMPOSE_FILE" up -d --build
-  else
-    run docker compose -f "$COMPOSE_FILE" up -d
+  # Allow prod compose files to consume these refs without extra export steps.
+  export ODOO_IMAGE_REF="${ODOO_IMAGE_REF:-$IMAGE_REF}"
+  export ODOO_PROXY_IMAGE_REF="${ODOO_PROXY_IMAGE_REF:-$IMAGE_REF}"
+  if [[ "$PULL_IMAGES" -eq 1 || "$NO_BUILD" -eq 1 ]]; then
+    compose pull
   fi
-  run docker compose -f "$COMPOSE_FILE" ps
+  if [[ "$NO_BUILD" -eq 0 ]]; then
+    compose up -d --build
+  else
+    compose up -d
+  fi
+  compose ps
 }
 
 if [[ "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
@@ -115,8 +158,59 @@ while [[ $# -gt 0 ]]; do
     --sync-deps)
       SYNC_DEPS=1
       ;;
+    --skip-deps)
+      SKIP_DEP_CHECK=1
+      ;;
     --no-build)
       NO_BUILD=1
+      ;;
+    --pull)
+      PULL_IMAGES=1
+      ;;
+    --compose-file)
+      if [[ $# -lt 2 ]]; then
+        echo "Error: --compose-file requires a value" >&2
+        usage
+        exit 1
+      fi
+      COMPOSE_FILE="$2"
+      shift
+      ;;
+    --env-file)
+      if [[ $# -lt 2 ]]; then
+        echo "Error: --env-file requires a value" >&2
+        usage
+        exit 1
+      fi
+      COMPOSE_ENV_FILE="$2"
+      shift
+      ;;
+    --project)
+      if [[ $# -lt 2 ]]; then
+        echo "Error: --project requires a value" >&2
+        usage
+        exit 1
+      fi
+      COMPOSE_PROJECT_NAME="$2"
+      shift
+      ;;
+    --dockerfile)
+      if [[ $# -lt 2 ]]; then
+        echo "Error: --dockerfile requires a value" >&2
+        usage
+        exit 1
+      fi
+      DOCKERFILE_PATH="$2"
+      shift
+      ;;
+    --context)
+      if [[ $# -lt 2 ]]; then
+        echo "Error: --context requires a value" >&2
+        usage
+        exit 1
+      fi
+      BUILD_CONTEXT="$2"
+      shift
       ;;
     -h|--help)
       usage
@@ -144,15 +238,15 @@ case "$ACTION" in
     ;;
   status)
     require_cmd docker
-    run docker compose -f "$COMPOSE_FILE" ps
+    compose ps
     ;;
   logs)
     require_cmd docker
-    run docker compose -f "$COMPOSE_FILE" logs -f "$ODOO_SERVICE"
+    compose logs -f "$ODOO_SERVICE"
     ;;
   down)
     require_cmd docker
-    run docker compose -f "$COMPOSE_FILE" down
+    compose down
     ;;
   *)
     echo "Error: unknown command: $ACTION" >&2

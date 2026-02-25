@@ -1,0 +1,16 @@
+services:
+  cloudflare_quick_tunnel:
+    image: cloudflare/cloudflared:latest
+    container_name: odoo-cloudflare-quick-tunnel
+    restart: unless-stopped
+    command: tunnel --no-autoupdate --url http://host.docker.internal:8069
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  cloudflare_quick_tunnel_proxy:
+    image: cloudflare/cloudflared:latest
+    container_name: odoo-proxy-cloudflare-quick-tunnel
+    restart: unless-stopped
+    command: tunnel --no-autoupdate --url http://host.docker.internal:${ODOO_PROXY_PORT:-8088}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

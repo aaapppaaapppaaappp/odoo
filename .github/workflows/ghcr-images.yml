@@ -4,6 +4,7 @@ name: Build and Push GHCR Images
   push:
     branches:
       - 19.0
+      - main
     tags:
       - "v*"
   workflow_dispatch:

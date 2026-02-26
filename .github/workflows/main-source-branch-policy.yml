@@ -1,0 +1,19 @@
+name: Main Source Branch Policy
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  main-source-branch-policy:
+    name: main-source-branch-policy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Allow only 19.0 as source branch
+        run: |
+          if [ "${{ github.head_ref }}" != "19.0" ]; then
+            echo "Only pull requests from branch 19.0 can target main."
+            echo "Received source branch: ${{ github.head_ref }}"
+            exit 1
+          fi

@@ -9,7 +9,7 @@ services:
     volumes:
       - odoo-db-data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${ODOO_DB_USER:-odoo} -d ${ODOO_DB_NAME:-odoo}"]
+      test: [ "CMD-SHELL", "pg_isready -U ${ODOO_DB_USER:-odoo} -d ${ODOO_DB_NAME:-odoo}" ]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -28,12 +28,14 @@ services:
       ODOO_DB_NAME: ${ODOO_DB_NAME:-odoo}
       ODOO_HTTP_INTERFACE: 0.0.0.0
       ODOO_HTTP_PORT: 8069
-    command: ["--proxy-mode"]
+      ODOO_ADDONS_PATH: /opt/odoo/addons,/opt/hireme_odoo_addons
+    command: [ "--proxy-mode" ]
     ports:
       - "127.0.0.1:${ODOO_HTTP_PORT:-8069}:8069"
       - "127.0.0.1:${ODOO_LONGPOLLING_PORT:-8072}:8072"
     volumes:
       - odoo-web-data:/var/lib/odoo
+      - ../hireme_odoo_addons:/opt/hireme_odoo_addons
 
 volumes:
   odoo-db-data:
